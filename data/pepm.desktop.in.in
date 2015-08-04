@@ -1,9 +1,9 @@
 [Desktop Entry]
-_Name=Figaro's Password Manager 2
+_Name=Privacy Enhanced Password Manager
 _GenericName=Password Manager
 _Comment=Manage passwords
-Exec=fpm2 %f
-TryExec=fpm2
+Exec=pepm %f
+TryExec=pepm
 Terminal=false
 StartupNotify=true
 Type=Application
