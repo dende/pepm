@@ -417,7 +417,7 @@ fpm_init(char* opt_file_name, int tray_on_startup)
   if (opt_file_name)
     glb_filename = opt_file_name;
   else
-    glb_filename = g_build_filename (g_get_home_dir(), FPM_DIR, "fpm", NULL);
+    glb_filename = g_build_filename (g_get_home_dir(), FPM_DIR, FPM_DATABASE_FILENAME, NULL);
 
   if(!g_file_test(g_build_filename (g_get_home_dir(), FPM_DIR, NULL), G_FILE_TEST_IS_DIR))
 	g_mkdir(g_build_filename (g_get_home_dir(), FPM_DIR, NULL), S_IRUSR | S_IWUSR | S_IXUSR);
@@ -987,7 +987,7 @@ void fpm_ini_load()
 
     ini = g_malloc0(sizeof(fpm_ini));
 
-    gchar *fpm_ini_file = g_build_filename (g_get_home_dir(), FPM_DIR, "fpm.ini", NULL);
+    gchar *fpm_ini_file = g_build_filename (g_get_home_dir(), FPM_DIR, FPM_INI_FILENAME, NULL);
 
     keyfile = g_key_file_new ();
     if (!g_key_file_load_from_file (keyfile, fpm_ini_file, G_KEY_FILE_NONE, NULL))
@@ -1213,7 +1213,7 @@ void fpm_ini_save()
 
     }
 
-    gchar *fpm_ini_file = g_build_filename (g_get_home_dir(), FPM_DIR, "fpm.ini", NULL);
+    gchar *fpm_ini_file = g_build_filename (g_get_home_dir(), FPM_DIR, FPM_INI_FILENAME, NULL);
 
     keyfile = g_key_file_new ();
 
@@ -1468,7 +1468,7 @@ gboolean fpm_lock() {
 	gtk_widget_destroy(gui->edit_window);
 //    g_signal_handlers_disconnect_by_func(gui->tray_icon, G_CALLBACK (tray_icon_on_menu), NULL);
 
-    gtk_status_icon_set_tooltip_text(gui->tray_icon, _("Figaro's Password Manager 2 - locked"));
+    gtk_status_icon_set_tooltip_text(gui->tray_icon, _("Privacy Enhanced Password Manager - locked"));
 
     fpm_crypt_init("");
     fpm_clear_list();

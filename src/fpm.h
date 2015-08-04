@@ -66,7 +66,9 @@ enum {  ACTION_RUN_LAUNCHER,
 #define FPM_DEFAULT_CAT_MSG	_("<DEFAULTS>")
 #define FPM_NONE_CAT_MSG	C_("category","<NONE>")
 
-#define FPM_DIR			".fpm"
+#define FPM_DIR			".pepm"
+#define FPM_INI_FILENAME "pepm.ini"
+#define FPM_DATABASE_FILENAME "pepm"
 
 /* Using this instead of memset() to prevent possible optimalization. Taken from gnupg util.h */
 #define wipememory2(_ptr,_set,_len) do { volatile char *_vptr=(volatile char *)(_ptr); size_t _vlen=(_len); while(_vlen) { *_vptr=(_set); _vptr++; _vlen--; } } while(0)

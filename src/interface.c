@@ -129,7 +129,7 @@ create_app_safe (void)
   gtk_window_set_title (GTK_WINDOW (app_safe), _("Privacy Enhanced Password Manager"));
   gtk_window_set_position (GTK_WINDOW (app_safe), GTK_WIN_POS_CENTER);
   gtk_window_set_default_size (GTK_WINDOW (app_safe), 500, 350);
-  app_safe_icon_pixbuf = create_pixbuf ("images/lock-38.png");
+  app_safe_icon_pixbuf = create_pixbuf ("logo.png");
   if (app_safe_icon_pixbuf)
     {
       gtk_window_set_icon (GTK_WINDOW (app_safe), app_safe_icon_pixbuf);
@@ -824,7 +824,7 @@ create_dialog_edit_passitem (void)
   dialog_edit_passitem = gtk_dialog_new ();
   gtk_window_set_title (GTK_WINDOW (dialog_edit_passitem), _("View / Edit Password Item"));
   gtk_window_set_default_size (GTK_WINDOW (dialog_edit_passitem), -1, 300);
-  dialog_edit_passitem_icon_pixbuf = create_pixbuf ("images/lock-38.png");
+  dialog_edit_passitem_icon_pixbuf = create_pixbuf ("logo.png");
   if (dialog_edit_passitem_icon_pixbuf)
     {
       gtk_window_set_icon (GTK_WINDOW (dialog_edit_passitem), dialog_edit_passitem_icon_pixbuf);
@@ -1075,7 +1075,7 @@ create_dialog_password (void)
   gtk_window_set_title (GTK_WINDOW (dialog_password), _("Privacy Enhanced Password Manager"));
   gtk_window_set_modal (GTK_WINDOW (dialog_password), TRUE);
   gtk_window_set_resizable (GTK_WINDOW (dialog_password), FALSE);
-  dialog_password_icon_pixbuf = create_pixbuf ("images/lock-38.png");
+  dialog_password_icon_pixbuf = create_pixbuf ("logo.png");
   if (dialog_password_icon_pixbuf)
     {
       gtk_window_set_icon (GTK_WINDOW (dialog_password), dialog_password_icon_pixbuf);
@@ -1100,7 +1100,7 @@ create_dialog_password (void)
   gtk_widget_show (drawingarea1);
   gtk_box_pack_start (GTK_BOX (vbox1), drawingarea1, FALSE, FALSE, 0);
 
-  pixmap1 = create_pixmap (dialog_password, "images/lock-38.png");
+  pixmap1 = create_pixmap (dialog_password, "logo.png");
   gtk_widget_show (pixmap1);
   gtk_box_pack_start (GTK_BOX (vbox1), pixmap1, TRUE, TRUE, 0);
 
@@ -1280,7 +1280,7 @@ create_dialog_password_gen (void)
   dialog_password_gen = gtk_dialog_new ();
   gtk_window_set_title (GTK_WINDOW (dialog_password_gen), _("Autogenerate Password"));
   gtk_window_set_modal (GTK_WINDOW (dialog_password_gen), TRUE);
-  dialog_password_gen_icon_pixbuf = create_pixbuf ("images/lock-38.png");
+  dialog_password_gen_icon_pixbuf = create_pixbuf ("logo.png");
   if (dialog_password_gen_icon_pixbuf)
     {
       gtk_window_set_icon (GTK_WINDOW (dialog_password_gen), dialog_password_gen_icon_pixbuf);
@@ -1526,7 +1526,7 @@ create_dialog_cpw (void)
   gtk_container_set_border_width (GTK_CONTAINER (dialog_cpw), 2);
   gtk_window_set_title (GTK_WINDOW (dialog_cpw), _("Choose Master Password"));
   gtk_window_set_resizable (GTK_WINDOW (dialog_cpw), FALSE);
-  dialog_cpw_icon_pixbuf = create_pixbuf ("images/lock-38.png");
+  dialog_cpw_icon_pixbuf = create_pixbuf ("logo.png");
   if (dialog_cpw_icon_pixbuf)
     {
       gtk_window_set_icon (GTK_WINDOW (dialog_cpw), dialog_cpw_icon_pixbuf);
@@ -1542,7 +1542,7 @@ create_dialog_cpw (void)
   gtk_widget_show (vbox5);
   gtk_box_pack_start (GTK_BOX (dialog_vbox5), vbox5, TRUE, TRUE, 2);
 
-  pixmap_logo = create_pixmap (dialog_cpw, "images/lock-38.png");
+  pixmap_logo = create_pixmap (dialog_cpw, "logo.png");
   gtk_widget_show (pixmap_logo);
   gtk_box_pack_start (GTK_BOX (vbox5), pixmap_logo, FALSE, FALSE, 5);
 
@@ -1781,7 +1781,7 @@ create_dialog_launcher (void)
   dialog_launcher = gtk_dialog_new ();
   gtk_window_set_title (GTK_WINDOW (dialog_launcher), _("Launcher Preferences"));
   gtk_window_set_resizable (GTK_WINDOW (dialog_launcher), FALSE);
-  dialog_launcher_icon_pixbuf = create_pixbuf ("images/lock-38.png");
+  dialog_launcher_icon_pixbuf = create_pixbuf ("logo.png");
   if (dialog_launcher_icon_pixbuf)
     {
       gtk_window_set_icon (GTK_WINDOW (dialog_launcher), dialog_launcher_icon_pixbuf);
@@ -2052,7 +2052,7 @@ create_dialog_about (void)
   gtk_about_dialog_set_website_label (GTK_ABOUT_DIALOG (dialog_about), _("PEPM website"));
   gtk_about_dialog_set_authors (GTK_ABOUT_DIALOG (dialog_about), authors);
   gtk_about_dialog_set_translator_credits (GTK_ABOUT_DIALOG (dialog_about), translators);
-  dialog_about_logo_pixbuf = create_pixbuf ("images/lock-38.png");
+  dialog_about_logo_pixbuf = create_pixbuf ("logo.png");
   gtk_about_dialog_set_logo (GTK_ABOUT_DIALOG (dialog_about), dialog_about_logo_pixbuf);
 
   g_signal_connect ((gpointer) dialog_about, "response",
@@ -2159,7 +2159,7 @@ create_dialog_preferences (void)
 
   dialog_preferences = gtk_dialog_new ();
   gtk_window_set_title (GTK_WINDOW (dialog_preferences), _("Preferences"));
-  dialog_preferences_icon_pixbuf = create_pixbuf ("images/lock-38.png");
+  dialog_preferences_icon_pixbuf = create_pixbuf ("logo.png");
   if (dialog_preferences_icon_pixbuf)
     {
       gtk_window_set_icon (GTK_WINDOW (dialog_preferences), dialog_preferences_icon_pixbuf);
