@@ -1,3 +1,7 @@
+autom4te.cache/
+data/pepm.desktop
+data/pepm.desktop.in
+src/pepm
 Makefile
 config.h
 config.log

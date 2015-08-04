@@ -1,4 +1,14 @@
-FIGARO'S PASSWORD MANAGER 2, v0.77
+PRIVACY ENHANCED PASSWORD MANAGER, v0.78
+
+Privacy Enhanced Password Manager is a programm that is build upon Figaro's
+Password Manager 2 but enhanced with a few features to make it easier for 
+user to regain control of their privacy. It was written as part of my Bachelor
+Thesis, together with a Browser extension that supplies account registrations
+to the Password Manager.
+
+Christian Hartlage
+
+
 
 Figaro's Password Manager 2 is a program that allows you to securely store the
 passwords using GTK2 interface. Features include:

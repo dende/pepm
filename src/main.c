@@ -61,7 +61,7 @@ main (int argc, char *argv[])
 	    tray_on_startup = 1;
 	    break;
 	default:
-	    printf("Usage: fpm2 [-f filename] [-t]\n");
+	    printf("Usage: pepm [-f filename] [-t]\n");
 	    printf("	-f filename		Open filename passwords file\n");
 	    printf("	-t			Start in tray icon\n");
 	    exit(0);

@@ -1,4 +1,4 @@
-/* FIGARO'S PASSWORD MANAGER 2 (FPM2)
+/* FIGARO'S PASSWORD MANAGER 2 (pepm)
  * Copyright (C) 2000 John Conneely
  * Copyright (C) 2009,2010 Aleš Koval
  *
@@ -368,7 +368,7 @@ passfile_load(gchar* file_name)
   file_version = (char *)xmlGetProp(doc->xmlRootNode, (xmlChar *)"min_version");
   if (strcmp(file_version, FULL_VERSION) > 0)
   {
-    printf(_("Sorry, the password file cannot be read because it uses a future file format. Please download the latest version of FPM2 and try again.\n"));
+    printf(_("Sorry, the password file cannot be read because it uses a future file format. Please download the latest version of pepm and try again.\n"));
     exit(-1);
   }
 
@@ -600,7 +600,7 @@ fpm_file_import(gchar *file_name, gint import_launchers, gchar *import_category,
 
   /* Check if document is one of ours */
   if(xmlStrcmp(doc->xmlRootNode->name, (xmlChar *)"FPM")) {
-    *message = g_strdup(_("File is not valid FPM2 password file."));
+    *message = g_strdup(_("File is not valid pepm password file."));
     return(-1);
   }
 

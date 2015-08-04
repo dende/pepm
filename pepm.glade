@@ -3463,7 +3463,7 @@ $p = password (not recommened)</property>
   <property name="border_width">5</property>
   <property name="visible">True</property>
   <property name="destroy_with_parent">False</property>
-  <property name="name" translatable="yes">FPM2</property>
+  <property name="name" translatable="yes">pepm</property>
   <property name="copyright" translatable="yes">(c) 2000-2003 John Conneely &amp; other contributors
 (c) 2008-2011 Aleš Koval</property>
   <property name="comments" translatable="yes">Figaro's Password Manager
@@ -3471,8 +3471,8 @@ Rewriten for GTK2.</property>
   <property name="license" translatable="yes">This application is licensed under the GNU General Public License Version 2 or (at your option) any later version.
 </property>
   <property name="wrap_license">True</property>
-  <property name="website">http://als.regnet.cz/fpm2/</property>
-  <property name="website_label" translatable="yes">FPM2 website</property>
+  <property name="website">http://als.regnet.cz/pepm/</property>
+  <property name="website_label" translatable="yes">pepm website</property>
   <property name="authors">John Conneely &amp; other contributors
 Aleš Koval</property>
   <property name="documenters"></property>

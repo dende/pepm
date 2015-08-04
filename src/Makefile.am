@@ -5,9 +5,9 @@ INCLUDES = \
 	-DPACKAGE_LOCALE_DIR=\""$(localedir)"\" \
 	@PACKAGE_CFLAGS@
 
-bin_PROGRAMS = fpm2
+bin_PROGRAMS = pepm
 
-fpm2_SOURCES = \
+pepm_SOURCES = \
 	main.c \
 	fpm.c fpm.h \
 	support.c support.h \
@@ -21,5 +21,5 @@ fpm2_SOURCES = \
 	bithelp.h fpm_launcher.c \
 	rijndael.c sha256.c
 
-fpm2_LDADD = @PACKAGE_LIBS@ $(INTLLIBS)
+pepm_LDADD = @PACKAGE_LIBS@ $(INTLLIBS)
 

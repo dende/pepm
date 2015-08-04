@@ -1,13 +1,13 @@
-# German translations for fpm2 package
-# German messages for fpm2.
-# Copyright (C) 2008 THE fpm2'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the fpm2 package.
+# German translations for pepm package
+# German messages for pepm.
+# Copyright (C) 2008 THE pepm'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the pepm package.
 # Mike Constabel <mike@constabel.net>, 2008.
 #
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: fpm2 0.77\n"
+"Project-Id-Version: pepm 0.77\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-02-09 08:33+0100\n"
 "PO-Revision-Date: 2010-02-11 10:50+0100\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: src/interface.c:129 src/interface.c:1063 src/interface.c:1095
 #: src/fpm.c:1378
-msgid "Figaro's Password Manager 2"
+msgid "Privacy Enhanced Password Manager"
 msgstr ""
 
 #: src/interface.c:147
@@ -376,8 +376,8 @@ msgid "Command Line _Variables"
 msgstr "Kommandozeilen_variablen"
 
 #: src/interface.c:2034
-msgid "FPM2"
-msgstr "FPM2"
+msgid "PEPM"
+msgstr "PEPM"
 
 #: src/interface.c:2035
 msgid ""
@@ -404,8 +404,8 @@ msgstr ""
 "Version 2.\n"
 
 #: src/interface.c:2040
-msgid "FPM2 website"
-msgstr "FPM2 Homepage"
+msgid "pepm website"
+msgstr "pepm Homepage"
 
 #: src/interface.c:2149
 msgid "Preferences"
@@ -811,7 +811,7 @@ msgstr "Kann Schlüsseldatei nicht lesen!"
 msgid "Password incorrect.  Please try again."
 msgstr "Passwort falsch. Bitte versuch es nocheinmal."
 
-#. if (fpm_question(GTK_WINDOW(glb_win_misc), _("Old file format detected.\n\nDo you want change password file to new more secure cipher?\n\nPlease take note that it will not be possible to continue open this password file in the earlier version FPM2."))
+#. if (fpm_question(GTK_WINDOW(glb_win_misc), _("Old file format detected.\n\nDo you want change password file to new more secure cipher?\n\nPlease take note that it will not be possible to continue open this password file in the earlier version pepm."))
 #: src/fpm.c:740
 msgid ""
 "Old file format detected.\n"
@@ -819,7 +819,7 @@ msgid ""
 "Do you want change password file to new more secure cipher?\n"
 "\n"
 "Please take note that it will not be possible to continue open this password "
-"file in the earlier version FPM2."
+"file in the earlier version pepm."
 msgstr ""
 "Altes Datenbankformat festgestellt.\n"
 "\n"
@@ -827,7 +827,7 @@ msgstr ""
 "verschlüsseln?\n"
 "\n"
 "Bedenke das Du die konvertierte Datenbank dann nicht mehr mit einer älteren "
-"Version von FPM2 öffnen kannst."
+"Version von pepm öffnen kannst."
 
 #: src/fpm.c:758
 msgid "Conversion of password file is done!"
@@ -906,19 +906,19 @@ msgstr "Passwörter als Klartext-XML exportiert nach %s."
 #, c-format
 msgid ""
 "Sorry, the password file cannot be read because it uses a future file "
-"format. Please download the latest version of FPM2 and try again.\n"
+"format. Please download the latest version of pepm and try again.\n"
 msgstr ""
 "Diese Datenbank kann nicht gelesen werden da sie ein neueres Format "
-"verwendet als die von Dir verwendete FPM2-Version.\n"
-"Bitte lade die neueste Version von FPM2 herunter und versuche es erneut.\n"
+"verwendet als die von Dir verwendete pepm-Version.\n"
+"Bitte lade die neueste Version von pepm herunter und versuche es erneut.\n"
 
 #: src/fpm_file.c:597
 msgid "File is not XML?"
 msgstr "Datei ist nicht im XML-Format?"
 
 #: src/fpm_file.c:603
-msgid "File is not valid FPM2 password file."
-msgstr "Datei ist keine gültige FPM2-Passwortdatei"
+msgid "File is not valid pepm password file."
+msgstr "Datei ist keine gültige pepm-Passwortdatei"
 
 #: src/fpm_file.c:613 src/fpm_file.c:670
 msgid "Invalid password file."

@@ -1,6 +1,6 @@
 dnl Process this file with autoconf to produce a configure script.
 
-AC_INIT([fpm2], [0.79], [als@regnet.cz], [fpm2], [http://als.regnet.cz/fpm2/])
+AC_INIT([pepm], [0.79], [als@regnet.cz], [pepm], [http://github.com/dende/pepm])
 AM_INIT_AUTOMAKE([no-dist-gzip dist-bzip2])
 AM_CONFIG_HEADER(config.h)
 AM_MAINTAINER_MODE
@@ -49,5 +49,5 @@ src/Makefile
 po/Makefile.in
 data/Makefile
 data/pixmaps/Makefile
-data/fpm2.desktop.in
+data/pepm.desktop.in
 ])

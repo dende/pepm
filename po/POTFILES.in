@@ -9,4 +9,4 @@ src/fpm.c
 src/fpm.h
 src/fpm_file.c
 src/fpm_launcher.c
-data/fpm2.desktop.in.in
+data/pepm.desktop.in.in

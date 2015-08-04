@@ -126,10 +126,10 @@ create_app_safe (void)
   accel_group = gtk_accel_group_new ();
 
   app_safe = gtk_window_new (GTK_WINDOW_TOPLEVEL);
-  gtk_window_set_title (GTK_WINDOW (app_safe), _("Figaro's Password Manager 2"));
+  gtk_window_set_title (GTK_WINDOW (app_safe), _("Privacy Enhanced Password Manager"));
   gtk_window_set_position (GTK_WINDOW (app_safe), GTK_WIN_POS_CENTER);
   gtk_window_set_default_size (GTK_WINDOW (app_safe), 500, 350);
-  app_safe_icon_pixbuf = create_pixbuf ("logo.png");
+  app_safe_icon_pixbuf = create_pixbuf ("images/lock-38.png");
   if (app_safe_icon_pixbuf)
     {
       gtk_window_set_icon (GTK_WINDOW (app_safe), app_safe_icon_pixbuf);
@@ -824,7 +824,7 @@ create_dialog_edit_passitem (void)
   dialog_edit_passitem = gtk_dialog_new ();
   gtk_window_set_title (GTK_WINDOW (dialog_edit_passitem), _("View / Edit Password Item"));
   gtk_window_set_default_size (GTK_WINDOW (dialog_edit_passitem), -1, 300);
-  dialog_edit_passitem_icon_pixbuf = create_pixbuf ("logo.png");
+  dialog_edit_passitem_icon_pixbuf = create_pixbuf ("images/lock-38.png");
   if (dialog_edit_passitem_icon_pixbuf)
     {
       gtk_window_set_icon (GTK_WINDOW (dialog_edit_passitem), dialog_edit_passitem_icon_pixbuf);
@@ -1072,10 +1072,10 @@ create_dialog_password (void)
   accel_group = gtk_accel_group_new ();
 
   dialog_password = gtk_dialog_new ();
-  gtk_window_set_title (GTK_WINDOW (dialog_password), _("Figaro's Password Manager 2"));
+  gtk_window_set_title (GTK_WINDOW (dialog_password), _("Privacy Enhanced Password Manager"));
   gtk_window_set_modal (GTK_WINDOW (dialog_password), TRUE);
   gtk_window_set_resizable (GTK_WINDOW (dialog_password), FALSE);
-  dialog_password_icon_pixbuf = create_pixbuf ("logo.png");
+  dialog_password_icon_pixbuf = create_pixbuf ("images/lock-38.png");
   if (dialog_password_icon_pixbuf)
     {
       gtk_window_set_icon (GTK_WINDOW (dialog_password), dialog_password_icon_pixbuf);
@@ -1100,11 +1100,11 @@ create_dialog_password (void)
   gtk_widget_show (drawingarea1);
   gtk_box_pack_start (GTK_BOX (vbox1), drawingarea1, FALSE, FALSE, 0);
 
-  pixmap1 = create_pixmap (dialog_password, "logo.png");
+  pixmap1 = create_pixmap (dialog_password, "images/lock-38.png");
   gtk_widget_show (pixmap1);
   gtk_box_pack_start (GTK_BOX (vbox1), pixmap1, TRUE, TRUE, 0);
 
-  label27 = gtk_label_new (_("Figaro's Password Manager 2"));
+  label27 = gtk_label_new (_("Privacy Enhanced Password Manager"));
   gtk_widget_show (label27);
   gtk_box_pack_start (GTK_BOX (vbox1), label27, FALSE, FALSE, 0);
   gtk_label_set_justify (GTK_LABEL (label27), GTK_JUSTIFY_CENTER);
@@ -1280,7 +1280,7 @@ create_dialog_password_gen (void)
   dialog_password_gen = gtk_dialog_new ();
   gtk_window_set_title (GTK_WINDOW (dialog_password_gen), _("Autogenerate Password"));
   gtk_window_set_modal (GTK_WINDOW (dialog_password_gen), TRUE);
-  dialog_password_gen_icon_pixbuf = create_pixbuf ("logo.png");
+  dialog_password_gen_icon_pixbuf = create_pixbuf ("images/lock-38.png");
   if (dialog_password_gen_icon_pixbuf)
     {
       gtk_window_set_icon (GTK_WINDOW (dialog_password_gen), dialog_password_gen_icon_pixbuf);
@@ -1526,7 +1526,7 @@ create_dialog_cpw (void)
   gtk_container_set_border_width (GTK_CONTAINER (dialog_cpw), 2);
   gtk_window_set_title (GTK_WINDOW (dialog_cpw), _("Choose Master Password"));
   gtk_window_set_resizable (GTK_WINDOW (dialog_cpw), FALSE);
-  dialog_cpw_icon_pixbuf = create_pixbuf ("logo.png");
+  dialog_cpw_icon_pixbuf = create_pixbuf ("images/lock-38.png");
   if (dialog_cpw_icon_pixbuf)
     {
       gtk_window_set_icon (GTK_WINDOW (dialog_cpw), dialog_cpw_icon_pixbuf);
@@ -1542,11 +1542,11 @@ create_dialog_cpw (void)
   gtk_widget_show (vbox5);
   gtk_box_pack_start (GTK_BOX (dialog_vbox5), vbox5, TRUE, TRUE, 2);
 
-  pixmap_logo = create_pixmap (dialog_cpw, "logo.png");
+  pixmap_logo = create_pixmap (dialog_cpw, "images/lock-38.png");
   gtk_widget_show (pixmap_logo);
   gtk_box_pack_start (GTK_BOX (vbox5), pixmap_logo, FALSE, FALSE, 5);
 
-  label62 = gtk_label_new (_("Welcome to Figaro's Password Manager 2"));
+  label62 = gtk_label_new (_("Welcome to Privacy Enhanced Password Manager"));
   gtk_widget_show (label62);
   gtk_box_pack_start (GTK_BOX (vbox5), label62, FALSE, FALSE, 5);
   gtk_label_set_justify (GTK_LABEL (label62), GTK_JUSTIFY_CENTER);
@@ -1781,7 +1781,7 @@ create_dialog_launcher (void)
   dialog_launcher = gtk_dialog_new ();
   gtk_window_set_title (GTK_WINDOW (dialog_launcher), _("Launcher Preferences"));
   gtk_window_set_resizable (GTK_WINDOW (dialog_launcher), FALSE);
-  dialog_launcher_icon_pixbuf = create_pixbuf ("logo.png");
+  dialog_launcher_icon_pixbuf = create_pixbuf ("images/lock-38.png");
   if (dialog_launcher_icon_pixbuf)
     {
       gtk_window_set_icon (GTK_WINDOW (dialog_launcher), dialog_launcher_icon_pixbuf);
@@ -2043,16 +2043,16 @@ create_dialog_about (void)
   dialog_about = gtk_about_dialog_new ();
   gtk_container_set_border_width (GTK_CONTAINER (dialog_about), 5);
   gtk_about_dialog_set_version (GTK_ABOUT_DIALOG (dialog_about), VERSION);
-  gtk_about_dialog_set_name (GTK_ABOUT_DIALOG (dialog_about), _("FPM2"));
-  gtk_about_dialog_set_copyright (GTK_ABOUT_DIALOG (dialog_about), _("(c) 2000-2003 John Conneely & other contributors\n(c) 2008-2011 Ale\305\241 Koval"));
-  gtk_about_dialog_set_comments (GTK_ABOUT_DIALOG (dialog_about), _("Figaro's Password Manager\nRewriten for GTK2."));
+  gtk_about_dialog_set_name (GTK_ABOUT_DIALOG (dialog_about), _("PEPM"));
+  gtk_about_dialog_set_copyright (GTK_ABOUT_DIALOG (dialog_about), _("(c) 2000-2003 John Conneely & other contributors\n(c) 2008-2011 Ale\305\241 Koval\n(c) 2015 Christian Hartlage"));
+  gtk_about_dialog_set_comments (GTK_ABOUT_DIALOG (dialog_about), _("Figaro's Password Manager 2\nEnhanced with PETs"));
   gtk_about_dialog_set_license (GTK_ABOUT_DIALOG (dialog_about), _("This application is licensed under the GNU General Public License Version 2 or (at your option) any later version.\n"));
   gtk_about_dialog_set_wrap_license (GTK_ABOUT_DIALOG (dialog_about), TRUE);
-  gtk_about_dialog_set_website (GTK_ABOUT_DIALOG (dialog_about), "http://als.regnet.cz/fpm2/");
-  gtk_about_dialog_set_website_label (GTK_ABOUT_DIALOG (dialog_about), _("FPM2 website"));
+  gtk_about_dialog_set_website (GTK_ABOUT_DIALOG (dialog_about), "https://github.com/dende/pepm");
+  gtk_about_dialog_set_website_label (GTK_ABOUT_DIALOG (dialog_about), _("PEPM website"));
   gtk_about_dialog_set_authors (GTK_ABOUT_DIALOG (dialog_about), authors);
   gtk_about_dialog_set_translator_credits (GTK_ABOUT_DIALOG (dialog_about), translators);
-  dialog_about_logo_pixbuf = create_pixbuf ("logo.png");
+  dialog_about_logo_pixbuf = create_pixbuf ("images/lock-38.png");
   gtk_about_dialog_set_logo (GTK_ABOUT_DIALOG (dialog_about), dialog_about_logo_pixbuf);
 
   g_signal_connect ((gpointer) dialog_about, "response",
@@ -2159,7 +2159,7 @@ create_dialog_preferences (void)
 
   dialog_preferences = gtk_dialog_new ();
   gtk_window_set_title (GTK_WINDOW (dialog_preferences), _("Preferences"));
-  dialog_preferences_icon_pixbuf = create_pixbuf ("logo.png");
+  dialog_preferences_icon_pixbuf = create_pixbuf ("images/lock-38.png");
   if (dialog_preferences_icon_pixbuf)
     {
       gtk_window_set_icon (GTK_WINDOW (dialog_preferences), dialog_preferences_icon_pixbuf);

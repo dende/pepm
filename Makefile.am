@@ -2,8 +2,8 @@
 
 SUBDIRS = src po data
 
-dist_man_MANS = fpm2.1
+dist_man_MANS = pepm.1
 
 EXTRA_DIST = \
-	fpm2.spec \
-	fpm2.glade fpm2.gladep
+	pepm.spec \
+	pepm.glade pepm.gladep

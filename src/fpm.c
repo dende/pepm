@@ -1,4 +1,4 @@
-/* FIGARO'S PASSWORD MANAGER 2 (FPM2)
+/* FIGARO'S PASSWORD MANAGER 2 (pepm)
  * Copyright (C) 2000 John Conneely
  * Copyright (C) 2008-2010 Aleš Koval
  *
@@ -734,8 +734,8 @@ fpm_check_password()
   }
 
     if(cipher_algo == BLOWFISH) {
-//      if (fpm_question(GTK_WINDOW(glb_win_misc), _("Old file format detected.\n\nDo you want change password file to new more secure cipher?\n\nPlease take note that it will not be possible to continue open this password file in the earlier version FPM2."))
-      if (fpm_question(GTK_WINDOW(gui->pass_window), _("Old file format detected.\n\nDo you want change password file to new more secure cipher?\n\nPlease take note that it will not be possible to continue open this password file in the earlier version FPM2."))
+//      if (fpm_question(GTK_WINDOW(glb_win_misc), _("Old file format detected.\n\nDo you want change password file to new more secure cipher?\n\nPlease take note that it will not be possible to continue open this password file in the earlier version pepm."))
+      if (fpm_question(GTK_WINDOW(gui->pass_window), _("Old file format detected.\n\nDo you want change password file to new more secure cipher?\n\nPlease take note that it will not be possible to continue open this password file in the earlier version pepm."))
 	 == GTK_RESPONSE_YES) {
 
 //	gtk_widget_destroy(glb_win_misc);
@@ -1481,7 +1481,7 @@ gboolean fpm_lock() {
 }
 
 /* This function is called when focus out from main window and we
-   need know if focus get another FPM2 window (TRUE) or no (FALSE). */
+   need know if focus get another pepm window (TRUE) or no (FALSE). */
 gboolean fpm_window_check() {
     GList* list;
     list = gtk_window_list_toplevels();

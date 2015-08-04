@@ -1,11 +1,11 @@
-Summary: Password manager with GTK2 GUI
-Name: fpm2
+Summary: Password manager with GTK2 GUI and Privacy Enhancement
+Name: pepm
 Version: 0.79
 Release: 1%{?dist}
 License: GPLv2+
 Group: Applications/Productivity
 Source: http://als.regnet.cz/%{name}/download/%{name}-%{version}.tar.bz2
-URL: http://als.regnet.cz/fpm2/
+URL: https://github.com/dende/pepm
 BuildRequires: gtk2-devel, libxml2-devel, desktop-file-utils, gettext
 BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 
@@ -53,9 +53,9 @@ rm -rf %{buildroot}
 %files -f %{name}.lang
 %defattr(-, root, root)
 %doc AUTHORS COPYING ChangeLog NEWS README TODO
-%{_bindir}/fpm2
-%{_datadir}/pixmaps/fpm2
-%{_mandir}/man1/fpm2.1.gz
+%{_bindir}/pepm
+%{_datadir}/pixmaps/pepm
+%{_mandir}/man1/pepm.1.gz
 %{_datadir}/applications/*.desktop
 
 %changelog

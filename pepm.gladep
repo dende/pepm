@@ -2,8 +2,8 @@
 <!DOCTYPE glade-project SYSTEM "http://glade.gnome.org/glade-project-2.0.dtd">
 
 <glade-project>
-  <name>Fpm2</name>
-  <program_name>fpm2</program_name>
+  <name>Pepm</name>
+  <program_name>pepm</program_name>
   <gnome_support>FALSE</gnome_support>
   <output_main_file>FALSE</output_main_file>
   <output_support_files>FALSE</output_support_files>
