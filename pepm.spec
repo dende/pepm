@@ -10,7 +10,7 @@ BuildRequires: gtk2-devel, libxml2-devel, desktop-file-utils, gettext
 BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 
 %description
-Figaro's Password Manager 2 is a program that allows you to securely store the
+Privacy Enhanced Password Manager is a program that allows you to securely store the
 passwords using GTK2 interface. Features include:
 - Passwords are encrypted with the AES-256 algorithm.
 - Copy passwords or usernames to the clipboard/primary selection.

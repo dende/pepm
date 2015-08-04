@@ -5,7 +5,7 @@
 
 <widget class="GtkWindow" id="app_safe">
   <property name="visible">True</property>
-  <property name="title" translatable="yes">Figaro's Password Manager 2</property>
+  <property name="title" translatable="yes">Privacy Enhanced Password Manager</property>
   <property name="type">GTK_WINDOW_TOPLEVEL</property>
   <property name="window_position">GTK_WIN_POS_CENTER</property>
   <property name="modal">False</property>
@@ -1518,7 +1518,7 @@
 
 <widget class="GtkDialog" id="dialog_password">
   <property name="visible">True</property>
-  <property name="title" translatable="yes">Figaro's Password Manager 2</property>
+  <property name="title" translatable="yes">Privacy Enhanced Password Manager</property>
   <property name="type">GTK_WINDOW_TOPLEVEL</property>
   <property name="window_position">GTK_WIN_POS_NONE</property>
   <property name="modal">True</property>
@@ -1651,7 +1651,7 @@
 	  <child>
 	    <widget class="GtkLabel" id="label27">
 	      <property name="visible">True</property>
-	      <property name="label" translatable="yes">Figaro's Password Manager 2</property>
+	      <property name="label" translatable="yes">Privacy Enhanced Password Manager</property>
 	      <property name="use_underline">False</property>
 	      <property name="use_markup">False</property>
 	      <property name="justify">GTK_JUSTIFY_CENTER</property>
@@ -2483,7 +2483,7 @@
 	  <child>
 	    <widget class="GtkLabel" id="label62">
 	      <property name="visible">True</property>
-	      <property name="label" translatable="yes">Welcome to Figaro's Password Manager 2</property>
+	      <property name="label" translatable="yes">Welcome to Privacy Enhanced Password Manager</property>
 	      <property name="use_underline">False</property>
 	      <property name="use_markup">False</property>
 	      <property name="justify">GTK_JUSTIFY_CENTER</property>
@@ -3465,13 +3465,12 @@ $p = password (not recommened)</property>
   <property name="destroy_with_parent">False</property>
   <property name="name" translatable="yes">pepm</property>
   <property name="copyright" translatable="yes">(c) 2000-2003 John Conneely &amp; other contributors
-(c) 2008-2011 Aleš Koval</property>
-  <property name="comments" translatable="yes">Figaro's Password Manager
-Rewriten for GTK2.</property>
+(c) 2008-2011 Aleš Kova (c) 2015 Christian Hartlage</property>
+  <property name="comments" translatable="yes">Privacy Enhanced Password Manager</property>
   <property name="license" translatable="yes">This application is licensed under the GNU General Public License Version 2 or (at your option) any later version.
 </property>
   <property name="wrap_license">True</property>
-  <property name="website">http://als.regnet.cz/pepm/</property>
+  <property name="website">https://github.com/dende/pepm/</property>
   <property name="website_label" translatable="yes">pepm website</property>
   <property name="authors">John Conneely &amp; other contributors
 Aleš Koval</property>

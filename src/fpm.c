@@ -1372,7 +1372,7 @@ void fpm_tray_icon() {
 	gtk_status_icon_set_from_file (gui->tray_icon, PACKAGE_PIXMAP_DIR "/logo.png");
     }
 
-    gtk_status_icon_set_tooltip_text(gui->tray_icon, _("Figaro's Password Manager 2"));
+    gtk_status_icon_set_tooltip_text(gui->tray_icon, _("Privacy Enhanced Password Manager"));
     gtk_status_icon_set_visible(gui->tray_icon, ini->tr_always_visible);
     gtk_widget_show (GTK_WIDGET(lookup_widget (gui->main_window , "hide_to_tray")));
 }
