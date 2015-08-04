@@ -1,0 +1,12 @@
+# List of source files containing translatable strings.
+[encoding: UTF-8]
+src/main.c
+src/interface.c
+src/callbacks.c
+src/support.c
+src/fpm_clist.c
+src/fpm.c
+src/fpm.h
+src/fpm_file.c
+src/fpm_launcher.c
+data/fpm2.desktop.in.in

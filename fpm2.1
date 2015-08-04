@@ -1,0 +1,63 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.\" First parameter, NAME, should be all caps
+.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
+.\" other parameters are allowed: see man(7), man(1)
+.TH fpm2 1 "aug 21 2009" "Debian GNU/Linux" "Figaro\'s Password Manager 2"
+.SH NAME
+fpm2 \- Figaro\'s Password Manager 2
+.SH DESCRIPTION
+\fBfpm2\fP is a
+.SM GUI
+password manager using the
+.SM GTK2 libraries. Passwords are encrypted using the AES-256 algorithm.
+.SH OPTIONS
+.TP
+.B \-f filename
+Use a different file to store fpm data. Must include directory where file is
+stored.
+.TP
+.B \-t
+Start fpm2 hidden in tray. No ask for password on startup.
+.SH USAGE
+.TP
+.B launchers
+Arbitrary launchers can be defined, in order to automatically launch progammes with parameters from the password entry, eg:
+.P
+.RS 10
+\fBxterm \-title $u@$a \-e ssh \-X $a \-l $u\fP.
+.RE
+.P
+.RS 7
+Possible variables are: 
+.RE
+.P
+.RS 10
+\fB$a\fP \- an arbitrary argument associated with the password entry \- typically a hostname.
+.P
+\fB$u\fP \- the username associated with the password entry
+.P
+\fB$p\fP \- the password associated with the password entry
+.RE
+.TP
+.B on\-the\-fly categories
+Each password entry can belong to a category, which is generated just by naming it in at least one entry.
+.TP
+.B password generation
+\fBfpm2\fP will generate passwords for you. Up to 24 characters with a boolean choices for \fIlowercase\fP, \fIuppercase\fP, \fInumbers\fP, \fIsymbols\fP and \fIambigous characters\fP (eg. \`O\` and \`0\`).
+.SH SECURITY
+Using the $p variable means that your password ends up in \fI.bash_history\fP in addition to being visible by \fBps aux\fP!
+.P
+In order to work around this problem conveniently \fBfpm2\fP can have your password copied to your primary selection, so that you may easily paste it where needed. Then your password should be as secured as your transport.
+.SH COPYRIGHT
+.SM
+GNU GPL
+(GNU GENERAL PUBLIC LICENSE) Version 2, or (at your option) any later version.
+.P
+The licence text is available on any Debian GNU/Linux system in \fI/usr/share/common-licenses/GPL\fP
+.SH AUTHOR
+John Conneely <jconneely@figaro.org>
+.br
+Aleš Koval <als@regnet.cz>
+.P
+This manual page was written by Lars Bahner <bahner@debian.org>
+for the Debian GNU/Linux system.

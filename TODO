@@ -1,0 +1,21 @@
+x.xx
+    - plugin system (partialy done)
+    - open recent files
+    - more ciphers? (plugins)
+    - use cracklib? (plugin)
+    - store file in item?
+    - Windows port?
+    - import/export to web service? (plugin)
+    - user configurable toolbar
+
+0.75  (done)
+    - AES-256 as default cipher
+    - two factor authentication (password and key file)
+    - better import/export
+
+0.72  (done)
+    - tray icon
+
+0.70  (done)
+    - advanced search field
+    - context menu

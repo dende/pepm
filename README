@@ -1,0 +1,44 @@
+FIGARO'S PASSWORD MANAGER 2, v0.77
+
+Figaro's Password Manager 2 is a program that allows you to securely store the
+passwords using GTK2 interface. Features include:
+- Passwords are encrypted with the AES-256 algorithm.
+- Copy passwords or usernames to the clipboard/primary selection.
+- If the password is for a web site, FPM2 can keep track of the URLs of your
+  login screens and can automatically launch your browser. In this capacity,
+  FPM2 acts as a kind of bookmark manager.
+- You can teach FPM2 to launch other applications, and optionally pass hostnames,
+  usernames or passwords to the command line.
+- FPM2 also has a password generator that can choose passwords for you. It
+  allows you to determine how long the password should be, and what types of
+  characters (lower case, upper case, numbers and symbols) should be used.
+  You can even have it avoid ambiguous characters such as a capital O or the
+  number zero.
+- Auto-minimise and/or auto-locking passwords database after configurable time
+  to the tray icon.
+
+This is an beta release, and may contain bugs. Do let me know if you find
+any, or have any other feedback.  
+
+When you first start FPM2, it will prompt you for a password. This password
+is used to generate the key FPM2 uses to encrypt your passwords. It is very
+important that you choose a good password for FPM2. A good password is one
+that you can easily remember, but others can not easily guess. It should be
+at least eight characters long and it should not be a dictionary word. It is
+vital that you remember this password. Should you forget it your passwords
+will be unrecoverable, and there won't be anything I can do to help you.
+
+Please feel free to contact me at als@regnet.cz with bug reports,
+feature requests, comments or suggestions. I'm particularly interested in
+anyone who has done a code read of the source looking for potential security
+holes. One of the requirements I have for taking this software out of beta is
+that enough people have looked at it for security problems.
+
+Aleš Koval
+als@regnet.cz
+http://als.regnet.cz/fpm2/
+
+This README originally written by:
+    John Conneely
+    jconneely@figaro.org
+    http://www.figaro.org/fpm/

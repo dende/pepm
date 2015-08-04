@@ -1,0 +1,971 @@
+# Basque translations for fpm2 package
+# Basque messages for fpm2.
+# Copyright (C) 2008 THE fpm2'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the fpm2 package.
+# Maider Likona Santamarina <pisoni@gisa-elkartea.org>, 2009
+# Ales Zabala Alava (Shagi) <shagi@gisa-elkartea.org>, 2009
+msgid ""
+msgstr ""
+"Project-Id-Version: fpm2 0.72\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-09 08:33+0100\n"
+"PO-Revision-Date: 2009-07-29 13:43+0100\n"
+"Last-Translator: Ales Zabala Alava (Shagi) <shagi@gisa-elkartea.org>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: eu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/interface.c:129 src/interface.c:1063 src/interface.c:1095
+#: src/fpm.c:1378
+msgid "Figaro's Password Manager 2"
+msgstr "Figaroren Pasahitz Kudeatzailea 2"
+
+#: src/interface.c:147
+msgid "_File"
+msgstr "_Fitxategia"
+
+#: src/interface.c:175
+msgid "_Import Passwords"
+msgstr "Pasahitzak _Inportatu"
+
+#: src/interface.c:183
+msgid "_Export Passwords"
+msgstr "Pasahitzak _Esportatu"
+
+#: src/interface.c:196
+msgid "_Minimize to tray"
+msgstr "Erretilura ikonotu (_M)"
+
+#: src/interface.c:211
+msgid "_Edit"
+msgstr "_Editatu"
+
+#: src/interface.c:218 src/interface.c:2684
+msgid "Copy _Password"
+msgstr "_Pasahitza kopiatu"
+
+#: src/interface.c:229 src/interface.c:2692
+msgid "Copy _Username"
+msgstr "Erabiltzailea Kopiat_u"
+
+#: src/interface.c:240 src/interface.c:2700
+msgid "Copy _Both"
+msgstr "_Biak kopiatu"
+
+#: src/interface.c:256 src/interface.c:2713
+msgid "_Add Item"
+msgstr "Elementu_a Gehitu"
+
+#: src/interface.c:267 src/interface.c:2721
+msgid "_Edit Item"
+msgstr "Elementua _Editatu"
+
+#: src/interface.c:278 src/interface.c:2729
+msgid "_Clone Item"
+msgstr "Elementua Klonatu (_C)"
+
+#: src/interface.c:289 src/interface.c:2737
+msgid "_Delete Item"
+msgstr "Elementua Ezabatu (_D)"
+
+#: src/interface.c:309
+#, fuzzy
+msgid "_View"
+msgstr "_Fitxategia"
+
+#: src/interface.c:316
+#, fuzzy
+msgid "_Title"
+msgstr "Izenburua"
+
+#: src/interface.c:320
+#, fuzzy
+msgid "U_RL"
+msgstr "URL"
+
+#: src/interface.c:324
+#, fuzzy
+msgid "_User"
+msgstr "Erabiltzailea"
+
+#: src/interface.c:328
+#, fuzzy
+msgid "_Password"
+msgstr "_Pasahitza:"
+
+#: src/interface.c:332
+#, fuzzy
+msgid "_Category"
+msgstr "Kategoria"
+
+#: src/interface.c:336
+#, fuzzy
+msgid "_Notes"
+msgstr "Oharrak:"
+
+#: src/interface.c:340
+#, fuzzy
+msgid "_Launcher"
+msgstr "Abiarazlea:"
+
+#: src/interface.c:349
+#, fuzzy
+msgid "Tool_bar"
+msgstr "_Tresna barra"
+
+#: src/interface.c:354
+msgid "_Settings"
+msgstr "Hobe_spenak"
+
+#: src/interface.c:361
+msgid "_Launcher Preferences"
+msgstr "Abiaraz_learen Hobespenak"
+
+#: src/interface.c:369
+msgid "Change _Password"
+msgstr "_Pasahitza aldatu"
+
+#: src/interface.c:386
+msgid "_Help"
+msgstr "Laguntza (_H)"
+
+#: src/interface.c:393
+msgid "Current Password File"
+msgstr "Uneko Pasahitz Fitxategia"
+
+#: src/interface.c:419
+msgid "Save password list"
+msgstr "Pasahitz zerrenda gorde"
+
+#: src/interface.c:427
+msgid "New"
+msgstr "Berria"
+
+#: src/interface.c:441 src/interface.c:890
+msgid "Jump"
+msgstr "Salto"
+
+#: src/interface.c:447 src/fpm.c:92
+msgid "User"
+msgstr "Erabiltzailea"
+
+#: src/interface.c:453
+msgid "Pass"
+msgstr "Pasahitza"
+
+#: src/interface.c:466 src/fpm.c:94
+msgid "Category"
+msgstr "Kategoria"
+
+#: src/interface.c:501
+msgid "Find:"
+msgstr "Bilatu:"
+
+#: src/interface.c:519 src/interface.c:2222
+msgid "_Match case"
+msgstr "Larriak/Xeheak bereizi (_M)"
+
+#: src/interface.c:813
+msgid "View / Edit Password Item"
+msgstr "Pasahitz elementua Ikusi / Editatu"
+
+#: src/interface.c:842
+msgid "Title:"
+msgstr "Izenburua:"
+
+#: src/interface.c:849
+msgid "URL / Arg:"
+msgstr "URL / Arg:"
+
+#: src/interface.c:856
+msgid "Password:"
+msgstr "Pasahitza:"
+
+#: src/interface.c:875
+msgid "Show Password"
+msgstr "Pasahitza erakutsi"
+
+#: src/interface.c:900
+msgid "User Name:"
+msgstr "Erabiltzaile Izena:"
+
+#: src/interface.c:907 src/callbacks.c:569 src/callbacks.c:635
+msgid "Category:"
+msgstr "Kategoria:"
+
+#: src/interface.c:914
+msgid "Include this password in the default list."
+msgstr "Pasahitz hau lehenetsitako zerrendan txertatu."
+
+#: src/interface.c:934
+msgid "Notes:"
+msgstr "Oharrak:"
+
+#: src/interface.c:942
+msgid "Launcher:"
+msgstr "Abiarazlea:"
+
+#: src/interface.c:965
+msgid "Generate..."
+msgstr "Sortu..."
+
+#: src/interface.c:1082
+msgid "Welcome to"
+msgstr "Ongi etorri"
+
+#: src/interface.c:1107
+msgid "Key _File:"
+msgstr "Gako_Fitxategia:"
+
+#: src/interface.c:1113
+msgid "_Password:"
+msgstr "_Pasahitza:"
+
+#: src/interface.c:1124 src/interface.c:1647 src/callbacks.c:1182
+msgid "Select Key File"
+msgstr "Gako Fitxategia Aukeratu"
+
+#: src/interface.c:1141
+msgid "Please enter your master password"
+msgstr "Pasahitz nagusia sartu mesedez"
+
+#: src/interface.c:1150 src/callbacks.c:1405
+msgid "Show Key File Dialog"
+msgstr "Gako Fitxategia Aukeratzeko Elkarrizketa Erakutsi"
+
+#: src/interface.c:1269 src/interface.c:1287
+msgid "Autogenerate Password"
+msgstr "Pasahitza Automatikoki Sortu"
+
+#: src/interface.c:1305
+msgid "Number of Characters:"
+msgstr "Karaktere Kopurua:"
+
+#: src/interface.c:1315
+msgid "Use lowercase letters (a, b, c,... )"
+msgstr "Letra xeheak erabili (a, b, c,...)"
+
+#: src/interface.c:1319
+msgid "Use uppercase letters (A, B, C.. )"
+msgstr "Letra larriak erabili (A, B, C, ...)"
+
+#: src/interface.c:1323
+msgid "Use numbers (1, 2, 3... )"
+msgstr "Zenbakiak erabili (1, 2, 3, ...)"
+
+#: src/interface.c:1327
+msgid "Use symbols (!, @, #...)"
+msgstr "Ikurrak erabili (!, @, #, ...)"
+
+#: src/interface.c:1331
+msgid "Avoid ambiguous characters (l,I&1, O&0, etc.)"
+msgstr "Karaktere zalantzagarriak ekidin (l,I&1, O&0, etab.)"
+
+#: src/interface.c:1356
+msgid "Bit equivalent: 2 ^"
+msgstr "Bit baliokidea: 2 ^"
+
+#: src/interface.c:1364
+msgid "Number of combinations: 10 ^"
+msgstr "Konbinazio kopurua: 10 ^"
+
+#: src/interface.c:1372
+msgid "Generation Options"
+msgstr "Sortze Aukerak"
+
+#: src/interface.c:1381
+msgid "Generated Password:"
+msgstr "Sortutako Pasahitza:"
+
+#: src/interface.c:1400
+msgid "Generate!"
+msgstr "Sortu!"
+
+#: src/interface.c:1515
+msgid "Choose Master Password"
+msgstr "Pasahitz nagusia aukeratu"
+
+#: src/interface.c:1537
+msgid "Welcome to Figaro's Password Manager 2"
+msgstr "Ongi etorri Figaroren Pasahitz Kudeatzailea 2ra"
+
+#: src/interface.c:1558
+msgid ""
+"Please choose the password which will be used to encrypt your passwords.  It "
+"is vital that you remember this password; without it, you can not access "
+"your password list."
+msgstr ""
+"Aukeratu mesedez zure pasahitzak zifratzeko erabiliko den pasahitza. "
+"Ezinbestekoa da pasahitz hau gogoratzea; bera gabe ezingo duzu zure pasahitz "
+"zerrenda atzitu."
+
+#: src/interface.c:1586
+msgid "Please choose a _password:"
+msgstr "_Pasahitz bat aukeratu:"
+
+#: src/interface.c:1595
+msgid "_Verify it by typing it again here:"
+msgstr "Berretsi berriro idatziz (_V):"
+
+#: src/interface.c:1604
+msgid "<b>Master Password</b>"
+msgstr "<b>Pasahitz nagusia</b>"
+
+#: src/interface.c:1625
+msgid ""
+"Optionally you may specify the file which will be used to encrypt your "
+"passwords along with master password. Do not lose this file, is necessary "
+"for access to your passwords."
+msgstr ""
+"Nahi izanez gero zure pasahitzak pasahitz nagusiarekin batera zifratzeko "
+"erabiliko den fitxategia adieraz dezakezu. Ez galdu fitxategi hau, zure "
+"pasahitzak atzitzeko beharrezkoa da."
+
+#: src/interface.c:1636
+msgid "_Key File:"
+msgstr "Gako Fitxategia (_K):"
+
+#: src/interface.c:1653
+msgid "<b>Key File</b>"
+msgstr "<b>Gako Fitxategia</b>"
+
+#: src/interface.c:1770
+msgid "Launcher Preferences"
+msgstr "Abiarazlearen Hobespenak"
+
+#: src/interface.c:1828 src/interface.c:1852
+msgid "to primary sel."
+msgstr "hautapen nagusira"
+
+#: src/interface.c:1834 src/interface.c:1858
+msgid "to clipboard"
+msgstr "arbelera"
+
+#: src/interface.c:1840 src/interface.c:1864
+msgid "don't copy"
+msgstr "Ez kopiatu"
+
+#: src/interface.c:1870
+msgid "Copy _User:"
+msgstr "Erabiltzailea Kopiat_u:"
+
+#: src/interface.c:1877
+msgid "Command _Line:"
+msgstr "Komando _Lerroa:"
+
+#: src/interface.c:1884
+msgid "Copy Pass_word:"
+msgstr "Pasahitza kopiatu (_W):"
+
+#: src/interface.c:1891
+msgid "Launcher _Name:"
+msgstr "Abiarazlearen Ize_na:"
+
+#: src/interface.c:1919
+msgid "<b>Launcher</b>"
+msgstr "<b>Abiarazlea</b>"
+
+#: src/interface.c:1928
+msgid ""
+"You can use the following variables in your command line:\n"
+"$a = argument / url\n"
+"$u = user name\n"
+"$p = password (not recommened)"
+msgstr ""
+"Komando lerroan ondoko aldagaiak erabil ditzakezu:\n"
+"$a = argumentua / url-a\n"
+"$u = erabiltzaile izena\n"
+"$p = pasahitza (ez gomendagarria)"
+
+#: src/interface.c:1934
+msgid "Command Line _Variables"
+msgstr "Komando lerroko aldagaiak (_V)"
+
+#: src/interface.c:2034
+msgid "FPM2"
+msgstr "FPM2"
+
+#: src/interface.c:2035
+#, fuzzy
+msgid ""
+"(c) 2000-2003 John Conneely & other contributors\n"
+"(c) 2008-2010 Aleš Koval"
+msgstr ""
+"(c) 2000-2003 John Conneely eta beste laguntzaileak\n"
+"(c) 2008-2009 Aleš Koval"
+
+#: src/interface.c:2036
+msgid ""
+"Figaro's Password Manager\n"
+"Rewriten for GTK2."
+msgstr ""
+"Figaroren Pasahitz Kudeatzailea\n"
+"GTK2rentzat berridatzia"
+
+#: src/interface.c:2037
+msgid ""
+"This application is licensed under the GNU General Public License Version 2 "
+"or (at your option) any later version.\n"
+msgstr ""
+"Aplikazio hau GNU Lizentzia Publiko Orokorra (GPL) 2 bertsioa edo (zure "
+"aukeran) ondorengo edozein bertsioarekin lizentziatuta dago.\n"
+
+#: src/interface.c:2040
+msgid "FPM2 website"
+msgstr "FPM2ren webgunea"
+
+#: src/interface.c:2149
+msgid "Preferences"
+msgstr "Hobespenak"
+
+#: src/interface.c:2186
+msgid "Search in _title"
+msgstr "Izenburuan bila_tu"
+
+#: src/interface.c:2190
+msgid "Search in u_rl"
+msgstr "U_rl-an bilatu"
+
+#: src/interface.c:2194
+msgid "Search in _user"
+msgstr "Erabiltzailean bilat_u"
+
+#: src/interface.c:2198
+msgid "Search in _notes"
+msgstr "Oharreta_n bilatu"
+
+#: src/interface.c:2202
+msgid "<b>Search Scope</b>"
+msgstr "<b>Bilaketa Esparrua</b>"
+
+#: src/interface.c:2226
+msgid "Only in current _category"
+msgstr "Uneko kategorian bakarrik (_C)"
+
+#: src/interface.c:2230
+msgid "<b>Search Conditions</b>"
+msgstr "<b>Bilaketa Baldintzak</b>"
+
+#: src/interface.c:2235
+msgid "Search"
+msgstr "Bilatu"
+
+#: src/interface.c:2258
+msgid "Save when entry _added"
+msgstr "Sarrer_a gehitzean gorde"
+
+#: src/interface.c:2262
+msgid "Save when entry _changed"
+msgstr "Sarrera aldatzean gorde (_C)"
+
+#: src/interface.c:2266
+msgid "Save when entry _deleted"
+msgstr "Sarrera ezabatzean gor_de"
+
+#: src/interface.c:2270
+msgid "Save on _quit"
+msgstr "Irtetzean gorde (_Q)"
+
+#: src/interface.c:2274
+msgid "<b>Automatic File Saving</b>"
+msgstr "<b>Fitxategiaren Gordetze Automatikoa</b>"
+
+#: src/interface.c:2294
+msgid "Create a backup copy of _files"
+msgstr "_Fitxategien segurtasun kopiak sortu"
+
+#: src/interface.c:2303
+msgid "Keep "
+msgstr "Mantendu "
+
+#: src/interface.c:2313
+msgid "  history backup files"
+msgstr " segurtasun kopien historikoa"
+
+#: src/interface.c:2317
+msgid "<b>File Saving</b>"
+msgstr "<b>Fitxategi Gordetzea</b>"
+
+#: src/interface.c:2322
+msgid "Saving"
+msgstr "Gordetzen"
+
+#: src/interface.c:2345
+msgid "Enable tray _icon"
+msgstr "Gaitu erretilu _ikonoa"
+
+#: src/interface.c:2349
+msgid "Tray icon always _visible"
+msgstr "Erretiluko ikonoa beti ikusgarri (_V)"
+
+#: src/interface.c:2358
+msgid "Auto _minimize to tray icon"
+msgstr "Erretilu ikonora auto_matikoki bidali"
+
+#: src/interface.c:2373 src/interface.c:2405
+msgid "after "
+msgstr "pasata "
+
+#: src/interface.c:2382 src/interface.c:2414
+msgid " minutes"
+msgstr " minutu"
+
+#: src/interface.c:2390
+msgid "_Lock program past minimize"
+msgstr "Programa b_lokeatu minimizatu ondoren"
+
+#: src/interface.c:2418
+msgid "<b>Tray Icon</b>"
+msgstr "<b>Erretiluko Ikonoa</b>"
+
+#: src/interface.c:2423
+msgid "Tray Icon"
+msgstr "Erretiluko Ikonoa"
+
+#: src/interface.c:2446
+msgid "_Open this category"
+msgstr "Kateg_oria hau ireki"
+
+#: src/interface.c:2460
+msgid "Open _search dialog"
+msgstr ""
+
+#: src/interface.c:2464
+#, fuzzy
+msgid "<b>On Startup</b>"
+msgstr "<b>Hasieran</b>"
+
+#: src/interface.c:2483
+#, fuzzy
+msgid "Call Launcher"
+msgstr "Abiarazlea:"
+
+#: src/interface.c:2484
+#, fuzzy
+msgid "Copy Username"
+msgstr "Erabiltzailea Kopiat_u"
+
+#: src/interface.c:2485
+#, fuzzy
+msgid "Copy Password"
+msgstr "_Pasahitza kopiatu"
+
+#: src/interface.c:2486
+#, fuzzy
+msgid "Copy Both"
+msgstr "_Biak kopiatu"
+
+#: src/interface.c:2487
+msgid "Open Edit Window"
+msgstr ""
+
+#: src/interface.c:2489
+msgid "<b>When Activated Entry</b>"
+msgstr ""
+
+#: src/interface.c:2518
+msgid "_Clear target after paste"
+msgstr "Helburua itsatsi ondoren garbitu (_C)"
+
+#: src/interface.c:2522
+#, fuzzy
+msgid "<b>Copy Target</b>"
+msgstr "<b>Helburua kopiatu</b>"
+
+#: src/interface.c:2527
+msgid "Others"
+msgstr "Besteak"
+
+#: src/interface.c:2797
+msgid "Generate Entropy"
+msgstr "Entropia Sortu"
+
+#: src/interface.c:2812
+msgid "<b>Please move your mouse to collecting entropy</b>"
+msgstr "<b>Mugitu zure sagua entropia biltzeko mesedez</b>"
+
+#: src/interface.c:2844
+msgid "_Show / Hide"
+msgstr "Erakut_si / Ezkutatu"
+
+#: src/interface.c:2852
+msgid "_Lock"
+msgstr "Gi_ltzatu"
+
+#: src/interface.c:2860
+msgid "_Unlock"
+msgstr "Desblokeat_u"
+
+#: src/interface.c:2928
+msgid "Icons and Text"
+msgstr "Ikonoak eta Testua"
+
+#: src/interface.c:2934
+msgid "Icons Only"
+msgstr "Ikonoak Bakarrik"
+
+#: src/interface.c:2939
+msgid "Text Only"
+msgstr "Testua Bakarrik"
+
+#: src/interface.c:2949
+msgid "Hide toolbar"
+msgstr "Tresna barra izkutatu"
+
+#: src/callbacks.c:243
+msgid "Are you sure you want discard changes?"
+msgstr "Ziur zaude aldaketak ezeztatu nahi dituzula?"
+
+#: src/callbacks.c:475 src/callbacks.c:1276 src/fpm.c:335 src/fpm.c:437
+#: src/fpm.c:445 src/fpm.c:924
+msgctxt "key_file"
+msgid "<NONE>"
+msgstr "<EZER>"
+
+#: src/callbacks.c:487
+msgid "Are you sure you want to delete this item?"
+msgstr "Ziur zaude elementu hau ezabatu nahi duzula?"
+
+#: src/callbacks.c:505 src/callbacks.c:896 src/fpm.c:1603
+#, c-format
+msgid "Passwords in category: %d"
+msgstr "%d kategoriako pasahitzak"
+
+#: src/callbacks.c:530
+msgid "Export passwords"
+msgstr "Pasahitzak esportatu"
+
+#: src/callbacks.c:546
+msgid "Export type:"
+msgstr "Esportazio mota:"
+
+#: src/callbacks.c:551 src/callbacks.c:622
+msgid "Plain XML"
+msgstr "XML Soila"
+
+#: src/callbacks.c:557 src/callbacks.c:626
+msgid "Launchers:"
+msgstr "Abiarazleak:"
+
+#: src/callbacks.c:561
+msgid "Do not export"
+msgstr "Ez esportatu"
+
+#: src/callbacks.c:562
+msgid "Export only the launchers, which are used in the selected category"
+msgstr "Hautatutako kategorian erabiltzen diren abiarazleak bakarrik esportatu"
+
+#: src/callbacks.c:563
+msgid "Export all"
+msgstr "Guztia esportatu"
+
+#: src/callbacks.c:609
+msgid "Import Password File"
+msgstr "Pasahitz Fitxategia Inportatu"
+
+#: src/callbacks.c:619
+msgid "Import type:"
+msgstr "Inportazio mota:"
+
+#: src/callbacks.c:629
+msgid "Do not import"
+msgstr "Ez inportatu"
+
+#: src/callbacks.c:630
+msgid "Import only new launchers"
+msgstr "Abiarazle berriak bakarrik inportatu"
+
+#: src/callbacks.c:631
+msgid "Import and replace all current launchers"
+msgstr "Inportatu eta gainidatzi uneko abiarazle guztiak"
+
+#: src/callbacks.c:641
+msgid "Do not change the category of items and import as it is."
+msgstr "Ez aldatu elementuen kategoria eta dagoen moduan inportatu."
+
+#: src/callbacks.c:688
+#, c-format
+msgid ""
+"Current location of password file:\n"
+"%s\n"
+"\n"
+"Cipher: %s"
+msgstr ""
+"Uneko pasahitz fitxategiaren kokapena:\n"
+"%s\n"
+"\n"
+"Zifratzea: %s"
+
+#: src/callbacks.c:703 src/fpm.c:479
+msgid "Do you want to save changes?"
+msgstr "Aldaketak gorde nahi dituzu?"
+
+#: src/callbacks.c:709
+msgid "Open Password File"
+msgstr "Pasahitz Fitxategia Ireki"
+
+#: src/callbacks.c:736
+msgid "Save Password File"
+msgstr "Pasahitz Fitxategia Gorde"
+
+#: src/callbacks.c:747 src/callbacks.c:1253
+msgid "Untitled password file"
+msgstr "Izenbururik gabeko pasahitz fitxategia"
+
+#: src/callbacks.c:1242
+msgid "New Password File"
+msgstr "Pasahitz Fitxategi Berria"
+
+#: src/callbacks.c:1355
+msgid "Please enter launcher name."
+msgstr "Abiarazlearen izena sartu, mesedez."
+
+#: src/callbacks.c:1400
+msgid "Hide Key File Dialog"
+msgstr "Gako Fitxategiaren Elkarrizketa Ezkutatu"
+
+#: src/callbacks.c:1497
+#, fuzzy
+msgid "Are you sure you want decrypt and display ALL passwords?"
+msgstr "Ziur zaude aldaketak ezeztatu nahi dituzula?"
+
+#: src/support.c:90 src/support.c:114
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr "Ezin da pixmap fitxategia topatu: %s"
+
+#: src/fpm.c:90
+msgid "Title"
+msgstr "Izenburua"
+
+#: src/fpm.c:91
+msgid "URL"
+msgstr "URL"
+
+#: src/fpm.c:93
+#, fuzzy
+msgid "Password"
+msgstr "Pasahitza:"
+
+#: src/fpm.c:95
+#, fuzzy
+msgid "Notes"
+msgstr "Oharrak:"
+
+#: src/fpm.c:96
+#, fuzzy
+msgid "Launcher"
+msgstr "Abiarazlea:"
+
+#: src/fpm.c:106
+#, c-format
+msgid "Could not open %s"
+msgstr "Ezin izan da %s ireki"
+
+#: src/fpm.c:113
+#, c-format
+msgid ""
+"Could not lock %s\n"
+"File already locked."
+msgstr ""
+"Ezin da %s giltzatu\n"
+"Fitxategia jadanik giltzatuta."
+
+#: src/fpm.c:263
+#, c-format
+msgid ""
+"Password exceeded limit of %d characters\n"
+"Your password of %d characters was truncated."
+msgstr ""
+"Pasahitzak %d karaktereetako muga gainditu du\n"
+"Zure pasahitza %d karaktereetara moztu da."
+
+#: src/fpm.c:538
+msgid "primary selection"
+msgstr "hautapen nagusia"
+
+#: src/fpm.c:539
+msgid "user"
+msgstr "erabiltzailea"
+
+#: src/fpm.c:543
+msgid "clipboard"
+msgstr "arbela"
+
+#: src/fpm.c:546
+msgid "password"
+msgstr "pasahitza"
+
+#: src/fpm.c:548
+#, c-format
+msgid "Copy %s to %s."
+msgstr "%s %s-(e)ra kopiatu"
+
+#: src/fpm.c:659
+msgid ""
+"This password's launcher command is undefined.\n"
+"Please define it in the edit launcher preference screen."
+msgstr ""
+"Pasahitz honen abiarazlearen komandoa definitu gabe dago.\n"
+"Abiarazleen hobespenak editatzeko pantailan definitu mesedez."
+
+#: src/fpm.c:663
+msgid ""
+"This password's launcher is undefined.\n"
+"Please define it in the edit password item screen."
+msgstr ""
+"Pasahitz honen abiarazlea definitu gabe dago.\n"
+"Pasahitza editatzeko pantailan definitu mesedez."
+
+#. fpm_message(GTK_WINDOW(glb_win_misc), _("Cannot read key file!"), GTK_MESSAGE_ERROR);
+#: src/fpm.c:691 src/fpm.c:827
+msgid "Cannot read key file!"
+msgstr "Ezin da fitxategia irakurri!"
+
+#: src/fpm.c:728
+msgid "Password incorrect.  Please try again."
+msgstr "Pasahitz ezegokia. Saiatu berriro mesedez."
+
+#. if (fpm_question(GTK_WINDOW(glb_win_misc), _("Old file format detected.\n\nDo you want change password file to new more secure cipher?\n\nPlease take note that it will not be possible to continue open this password file in the earlier version FPM2."))
+#: src/fpm.c:740
+msgid ""
+"Old file format detected.\n"
+"\n"
+"Do you want change password file to new more secure cipher?\n"
+"\n"
+"Please take note that it will not be possible to continue open this password "
+"file in the earlier version FPM2."
+msgstr ""
+"Formatu zaharreko fitxategia antzemanda.\n"
+"\n"
+"Pasahitz fitxategia zifratze sendoagora aldatu nahi duzu?\n"
+"\n"
+"Mesedez kontutan hartu ezingo duzula fitxategi hau FPM2ren aurreko "
+"bertsioetan ireki."
+
+#: src/fpm.c:758
+msgid "Conversion of password file is done!"
+msgstr "Pasahitz fitxategiaren bihurketa eginda!"
+
+#: src/fpm.c:813
+msgid "Sorry, the passwords do not match."
+msgstr "Barkatu, pasahitzak ez datoz bat."
+
+#: src/fpm.c:818
+msgid "Sorry, your password is too short."
+msgstr "Barkatu, zure pasahitza motzegia da."
+
+#: src/fpm.c:978
+msgid "Information"
+msgstr "Informazioa"
+
+#. g_signal_handlers_disconnect_by_func(gui->tray_icon, G_CALLBACK (tray_icon_on_menu), NULL);
+#: src/fpm.c:1474
+msgid "Figaro's Password Manager 2 - locked"
+msgstr "Figaroren Pasahitz Kudeatzailea 2 - giltzatuta"
+
+#: src/fpm.c:1547
+msgid "Question"
+msgstr "Galdera"
+
+#: src/fpm.c:1560
+msgid "Primary selection"
+msgstr "Hautapen nagusia"
+
+#: src/fpm.c:1561
+msgid "Clipboard"
+msgstr "Arbela"
+
+#: src/fpm.c:1567
+msgid ""
+"\n"
+"Please select a row."
+msgstr ""
+"\n"
+"Aukeratu lerro bat mesedez."
+
+#: src/fpm.h:68
+msgid "<ALL CATEGORIES>"
+msgstr "<KATEGORIA GUZTIAK>"
+
+#: src/fpm.h:69
+msgid "<DEFAULTS>"
+msgstr "<DEFEKTUZKOAK>"
+
+#: src/fpm.h:70
+msgctxt "category"
+msgid "<NONE>"
+msgstr "<EZER>"
+
+#. chmod(file_name, S_IRUSR | S_IWUSR);
+#. cmd = g_strdup_printf("chmod 0600 %s", file_name);
+#. fpm_execute_shell(cmd);
+#. g_free(cmd);
+#.
+#: src/fpm_file.c:232
+#, c-format
+msgid "Saved %d password(s)."
+msgstr "%d pasahitz gordeta."
+
+#. cmd = g_strdup_printf("chmod 0600 %s", file_name);
+#. fpm_execute_shell(cmd);
+#. g_free(cmd);
+#.
+#: src/fpm_file.c:331
+#, c-format
+msgid "Exported clear XML passwords to %s."
+msgstr "Pasahitzak %s XML garbira esportatuta."
+
+#: src/fpm_file.c:370
+#, c-format
+msgid ""
+"Sorry, the password file cannot be read because it uses a future file "
+"format. Please download the latest version of FPM2 and try again.\n"
+msgstr ""
+"Barkatu, pasahitz fitxategia ezin da irakurri etorkizuneko fitxategi formatu "
+"bat erabiltzen duelako. Eskuratu mesedez FPM2-ren azkeneko bertsioa eta "
+"berriro saiatu.\n"
+
+#: src/fpm_file.c:597
+msgid "File is not XML?"
+msgstr "Fitxategia ez da XML?"
+
+#: src/fpm_file.c:603
+msgid "File is not valid FPM2 password file."
+msgstr "Fitxategia ez da baliozko FPM2 pasahitz fitxategia."
+
+#: src/fpm_file.c:613 src/fpm_file.c:670
+msgid "Invalid password file."
+msgstr "Pasahitz fitxategi ezegokia."
+
+#: src/fpm_file.c:738
+#, c-format
+msgid "Imported %d password(s)."
+msgstr "%d pasahitz inportatuta."
+
+#~ msgid "Unrecognized option.\n"
+#~ msgstr "Aukera ezezaguna.\n"
+
+#~ msgid "_Preferences"
+#~ msgstr "Hobes_penak"
+
+#~ msgid "Search Conditions"
+#~ msgstr "Bilaketa Baldintzak"
+
+#~ msgid "Could not create a link to %s"
+#~ msgstr "Ezin da %s-(e)ra esteka sortu"
+
+#~ msgid "Could not fstat %s"
+#~ msgstr "Ezin zaio %s-(e)ri fstat egin"
+
+#~ msgid ""
+#~ "Lock file %s exists.\n"
+#~ "If you know this to be an error, clean up the\n"
+#~ "lock files inthe directory %s."
+#~ msgstr ""
+#~ "%s blokeo fitxategia existitzen da.\n"
+#~ "Ziur bazaude errore bat dela, ezabatu blokeo\n"
+#~ "fitxategiak %s direktorioan."

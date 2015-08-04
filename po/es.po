@@ -1,0 +1,1030 @@
+# Spanish translations for fpm2 package
+# Spanish messages for fpm2.
+# Copyright (C) 2008 THE fpm2'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the fpm2 package.
+# Antonio Rguez. Capita <antoniorodc@gmail.com>, 2009, 2010.
+# Antonio Rguez. Capita <antoniorodc@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: fpm2 0.77\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-09 08:33+0100\n"
+"PO-Revision-Date: 2010-02-14 19:13+0100\n"
+"Last-Translator: Antonio Rguez. Capita <antoniorodc@gmail.com>\n"
+"Language-Team: es <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.3.1\n"
+
+#: src/interface.c:129 src/interface.c:1063 src/interface.c:1095
+#: src/fpm.c:1378
+msgid "Figaro's Password Manager 2"
+msgstr "Figaro's Password Manager 2"
+
+#: src/interface.c:147
+msgid "_File"
+msgstr "_Archivo"
+
+#: src/interface.c:175
+msgid "_Import Passwords"
+msgstr "_Importar contraseñas"
+
+#: src/interface.c:183
+msgid "_Export Passwords"
+msgstr "_Exportar contraseñas"
+
+#: src/interface.c:196
+msgid "_Minimize to tray"
+msgstr "_Minimizar al área de notificación"
+
+#: src/interface.c:211
+msgid "_Edit"
+msgstr "_Editar"
+
+#: src/interface.c:218 src/interface.c:2684
+msgid "Copy _Password"
+msgstr "Copiar _contraseña"
+
+#: src/interface.c:229 src/interface.c:2692
+msgid "Copy _Username"
+msgstr "Copiar _usuario"
+
+#: src/interface.c:240 src/interface.c:2700
+msgid "Copy _Both"
+msgstr "Copiar a_mbos"
+
+#: src/interface.c:256 src/interface.c:2713
+msgid "_Add Item"
+msgstr "_Añadir elemento"
+
+#: src/interface.c:267 src/interface.c:2721
+msgid "_Edit Item"
+msgstr "_Editar elemento"
+
+#: src/interface.c:278 src/interface.c:2729
+msgid "_Clone Item"
+msgstr "C_lonar elemento"
+
+#: src/interface.c:289 src/interface.c:2737
+msgid "_Delete Item"
+msgstr "Bo_rrar elemento"
+
+#: src/interface.c:309
+msgid "_View"
+msgstr "_Ver"
+
+#: src/interface.c:316
+msgid "_Title"
+msgstr "_Título"
+
+#: src/interface.c:320
+msgid "U_RL"
+msgstr "U_RL"
+
+#: src/interface.c:324
+msgid "_User"
+msgstr "_Usuario"
+
+#: src/interface.c:328
+msgid "_Password"
+msgstr "_Contraseña"
+
+#: src/interface.c:332
+msgid "_Category"
+msgstr "_Categoría"
+
+#: src/interface.c:336
+msgid "_Notes"
+msgstr "_Notas"
+
+#: src/interface.c:340
+msgid "_Launcher"
+msgstr "_Lanzador"
+
+#: src/interface.c:349
+msgid "Tool_bar"
+msgstr "_Barra de herramientas"
+
+#: src/interface.c:354
+msgid "_Settings"
+msgstr "_Opciones"
+
+#: src/interface.c:361
+msgid "_Launcher Preferences"
+msgstr "Preferencias _lanzador"
+
+#: src/interface.c:369
+msgid "Change _Password"
+msgstr "_Cambiar contraseña"
+
+#: src/interface.c:386
+msgid "_Help"
+msgstr "_Ayuda"
+
+#: src/interface.c:393
+msgid "Current Password File"
+msgstr "Archivo actual de claves"
+
+#: src/interface.c:419
+msgid "Save password list"
+msgstr "Guardar lista de contraseñas"
+
+#: src/interface.c:427
+msgid "New"
+msgstr "Nuevo"
+
+#: src/interface.c:441 src/interface.c:890
+msgid "Jump"
+msgstr "Ir a"
+
+#: src/interface.c:447 src/fpm.c:92
+msgid "User"
+msgstr "Usuario"
+
+#: src/interface.c:453
+msgid "Pass"
+msgstr "Contraseña"
+
+#: src/interface.c:466 src/fpm.c:94
+msgid "Category"
+msgstr "Categoría"
+
+#: src/interface.c:501
+msgid "Find:"
+msgstr "Buscar:"
+
+#: src/interface.c:519 src/interface.c:2222
+msgid "_Match case"
+msgstr "Coincidir con _mayúsculas y minúsculas"
+
+#: src/interface.c:813
+msgid "View / Edit Password Item"
+msgstr "Ver / Editar Contraseña"
+
+#: src/interface.c:842
+msgid "Title:"
+msgstr "Título:"
+
+#: src/interface.c:849
+msgid "URL / Arg:"
+msgstr "URL / Arg:"
+
+#: src/interface.c:856
+msgid "Password:"
+msgstr "Contraseña:"
+
+#: src/interface.c:875
+msgid "Show Password"
+msgstr "Ver contraseña"
+
+#: src/interface.c:900
+msgid "User Name:"
+msgstr "Nombre usuario:"
+
+#: src/interface.c:907 src/callbacks.c:569 src/callbacks.c:635
+msgid "Category:"
+msgstr "Categoría:"
+
+#: src/interface.c:914
+msgid "Include this password in the default list."
+msgstr "Incluir esta contraseña en la lista por defecto."
+
+#: src/interface.c:934
+msgid "Notes:"
+msgstr "Notas:"
+
+#: src/interface.c:942
+msgid "Launcher:"
+msgstr "Lanzador:"
+
+#: src/interface.c:965
+msgid "Generate..."
+msgstr "Generar..."
+
+#: src/interface.c:1082
+msgid "Welcome to"
+msgstr "Bienvenido a"
+
+#: src/interface.c:1107
+msgid "Key _File:"
+msgstr "_Archivo clave"
+
+#: src/interface.c:1113
+msgid "_Password:"
+msgstr "_Contraseña:"
+
+#: src/interface.c:1124 src/interface.c:1647 src/callbacks.c:1182
+msgid "Select Key File"
+msgstr "Seleccionar archivo clave"
+
+#: src/interface.c:1141
+msgid "Please enter your master password"
+msgstr "Introduzca su contraseña maestra"
+
+#: src/interface.c:1150 src/callbacks.c:1405
+msgid "Show Key File Dialog"
+msgstr "Mostrar diálogo de Archivo Clave"
+
+#: src/interface.c:1269 src/interface.c:1287
+msgid "Autogenerate Password"
+msgstr "Autogenerar contraseña"
+
+#: src/interface.c:1305
+msgid "Number of Characters:"
+msgstr "Número de caracteres:"
+
+#: src/interface.c:1315
+msgid "Use lowercase letters (a, b, c,... )"
+msgstr "Usar minúsculas (a, b, c,...)"
+
+#: src/interface.c:1319
+msgid "Use uppercase letters (A, B, C.. )"
+msgstr "Usar mayúsculas (A, B, C, ...)"
+
+#: src/interface.c:1323
+msgid "Use numbers (1, 2, 3... )"
+msgstr "Usar números (1, 2, 3, ...)"
+
+#: src/interface.c:1327
+msgid "Use symbols (!, @, #...)"
+msgstr "Usar símbolos (!, @, #, ...)"
+
+#: src/interface.c:1331
+msgid "Avoid ambiguous characters (l,I&1, O&0, etc.)"
+msgstr "Incluir caracteres ambiguos (l,I&1, O&0, ...)"
+
+#: src/interface.c:1356
+msgid "Bit equivalent: 2 ^"
+msgstr "Bit equivalente: 2 ^"
+
+#: src/interface.c:1364
+msgid "Number of combinations: 10 ^"
+msgstr "Número de combinaciones: 10 ^"
+
+#: src/interface.c:1372
+msgid "Generation Options"
+msgstr "Opciones de generación"
+
+#: src/interface.c:1381
+msgid "Generated Password:"
+msgstr "Contraseña generada:"
+
+#: src/interface.c:1400
+msgid "Generate!"
+msgstr "¡Generar!"
+
+#: src/interface.c:1515
+msgid "Choose Master Password"
+msgstr "Elija la contraseña maestra"
+
+#: src/interface.c:1537
+msgid "Welcome to Figaro's Password Manager 2"
+msgstr "Bienvenido a Figaro's Password Manager 2"
+
+#: src/interface.c:1558
+msgid ""
+"Please choose the password which will be used to encrypt your passwords.  It "
+"is vital that you remember this password; without it, you can not access "
+"your password list."
+msgstr ""
+"Introduzca la contraseña que se usará para cifrar sus contraseñas. Es vital "
+"que recuerde esta contraseña; sin ella, no podrá acceder a su lista de "
+"contraseñas."
+
+#: src/interface.c:1586
+msgid "Please choose a _password:"
+msgstr "Introduzca su _contraseña:"
+
+#: src/interface.c:1595
+msgid "_Verify it by typing it again here:"
+msgstr "_Verifique tecleando de nuevo:"
+
+#: src/interface.c:1604
+msgid "<b>Master Password</b>"
+msgstr "<b>Contraseña Maestra</b>"
+
+#: src/interface.c:1625
+msgid ""
+"Optionally you may specify the file which will be used to encrypt your "
+"passwords along with master password. Do not lose this file, is necessary "
+"for access to your passwords."
+msgstr ""
+"Opcionalmente puede especificar un archivo que será usado para cifrar sus "
+"contraseñas junto con la contraseña maestra. No pierda este archivo, será "
+"necesario para acceder a sus contraseñas."
+
+#: src/interface.c:1636
+msgid "_Key File:"
+msgstr "Archivo _clave:"
+
+#: src/interface.c:1653
+msgid "<b>Key File</b>"
+msgstr "<b>Archivo Clave</b>"
+
+#: src/interface.c:1770
+msgid "Launcher Preferences"
+msgstr "Preferencias _lanzador"
+
+#: src/interface.c:1828 src/interface.c:1852
+msgid "to primary sel."
+msgstr "a primera sel."
+
+#: src/interface.c:1834 src/interface.c:1858
+msgid "to clipboard"
+msgstr "al portapapeles"
+
+#: src/interface.c:1840 src/interface.c:1864
+msgid "don't copy"
+msgstr "no copiar"
+
+#: src/interface.c:1870
+msgid "Copy _User:"
+msgstr "Copiar _usuario:"
+
+#: src/interface.c:1877
+msgid "Command _Line:"
+msgstr "_Línea de comandos:"
+
+#: src/interface.c:1884
+msgid "Copy Pass_word:"
+msgstr "Copiar _contraseña:"
+
+#: src/interface.c:1891
+msgid "Launcher _Name:"
+msgstr "_Nombre lanzador:"
+
+#: src/interface.c:1919
+msgid "<b>Launcher</b>"
+msgstr "<b>Lanzador</b>"
+
+#: src/interface.c:1928
+msgid ""
+"You can use the following variables in your command line:\n"
+"$a = argument / url\n"
+"$u = user name\n"
+"$p = password (not recommened)"
+msgstr ""
+"Puede utilizar las siguientes variables en la línea de comandos:\n"
+"$a = argumento / URL\n"
+"$u = nombre de usuario\n"
+"$p = contraseña (no recomendado)"
+
+#: src/interface.c:1934
+msgid "Command Line _Variables"
+msgstr "Variables de línea de comandos"
+
+#: src/interface.c:2034
+msgid "FPM2"
+msgstr "FPM2"
+
+#: src/interface.c:2035
+msgid ""
+"(c) 2000-2003 John Conneely & other contributors\n"
+"(c) 2008-2010 Aleš Koval"
+msgstr ""
+"(c) 2000-2003 John Conneely & other contributors\n"
+"(c) 2008-2010 Aleš Koval"
+
+#: src/interface.c:2036
+msgid ""
+"Figaro's Password Manager\n"
+"Rewriten for GTK2."
+msgstr ""
+"Figaro's Password Manager\n"
+"Reescrito para GTK2"
+
+#: src/interface.c:2037
+msgid ""
+"This application is licensed under the GNU General Public License Version 2 "
+"or (at your option) any later version.\n"
+msgstr ""
+"Esta aplicación está sujeta a una licencia GNU General Public License "
+"Version 2 o (a su elección) cualquier versión posterior.\n"
+
+#: src/interface.c:2040
+msgid "FPM2 website"
+msgstr "Sitio web de FPM2"
+
+#: src/interface.c:2149
+msgid "Preferences"
+msgstr "Preferencias"
+
+#: src/interface.c:2186
+msgid "Search in _title"
+msgstr "Buscar en _título"
+
+#: src/interface.c:2190
+msgid "Search in u_rl"
+msgstr "Buscar en u_rl"
+
+#: src/interface.c:2194
+msgid "Search in _user"
+msgstr "Buscar en _usuario"
+
+#: src/interface.c:2198
+msgid "Search in _notes"
+msgstr "Buscar en _notas"
+
+#: src/interface.c:2202
+msgid "<b>Search Scope</b>"
+msgstr "<b>Ámbito de la búsqueda</b>"
+
+#: src/interface.c:2226
+msgid "Only in current _category"
+msgstr "Sólo en la _categoría actual"
+
+#: src/interface.c:2230
+msgid "<b>Search Conditions</b>"
+msgstr "<b>Condiciones de búsqueda</b>"
+
+#: src/interface.c:2235
+msgid "Search"
+msgstr "Buscar"
+
+#: src/interface.c:2258
+msgid "Save when entry _added"
+msgstr "Guardar cuando se _añade entrada"
+
+#: src/interface.c:2262
+msgid "Save when entry _changed"
+msgstr "Guardar cuando se _modifica entrada"
+
+#: src/interface.c:2266
+msgid "Save when entry _deleted"
+msgstr "Guardar cuando se _elimina entrada"
+
+#: src/interface.c:2270
+msgid "Save on _quit"
+msgstr "Guardar al _salir"
+
+#: src/interface.c:2274
+msgid "<b>Automatic File Saving</b>"
+msgstr "<b>Guardado Automático del Archivo</b>"
+
+#: src/interface.c:2294
+msgid "Create a backup copy of _files"
+msgstr "Crear una copia de seguridad de los archivos"
+
+#: src/interface.c:2303
+msgid "Keep "
+msgstr "Mantener "
+
+#: src/interface.c:2313
+msgid "  history backup files"
+msgstr " históricos de copias de seguridad"
+
+#: src/interface.c:2317
+msgid "<b>File Saving</b>"
+msgstr "<b>Guardado de Archivo</b>"
+
+#: src/interface.c:2322
+msgid "Saving"
+msgstr "Guardando"
+
+#: src/interface.c:2345
+msgid "Enable tray _icon"
+msgstr "Activar el _icono del área de notificación"
+
+#: src/interface.c:2349
+msgid "Tray icon always _visible"
+msgstr "Icono del área de notificación siempre visible"
+
+#: src/interface.c:2358
+msgid "Auto _minimize to tray icon"
+msgstr "Auto _minimizar al área de notificación"
+
+#: src/interface.c:2373 src/interface.c:2405
+msgid "after "
+msgstr "después de "
+
+#: src/interface.c:2382 src/interface.c:2414
+msgid " minutes"
+msgstr " minutos"
+
+#: src/interface.c:2390
+msgid "_Lock program past minimize"
+msgstr " Bloquear el programa tras minimizar"
+
+#: src/interface.c:2418
+msgid "<b>Tray Icon</b>"
+msgstr "<b>Icono Área Notificación</b>"
+
+#: src/interface.c:2423
+msgid "Tray Icon"
+msgstr "Icono Área Notificación"
+
+#: src/interface.c:2446
+msgid "_Open this category"
+msgstr "_Abrir esta categoría"
+
+#: src/interface.c:2460
+msgid "Open _search dialog"
+msgstr "Abrir cuadro de bú_squeda"
+
+#: src/interface.c:2464
+msgid "<b>On Startup</b>"
+msgstr "<b>Al inicio</b>"
+
+#: src/interface.c:2483
+msgid "Call Launcher"
+msgstr "Usar Lanzador"
+
+#: src/interface.c:2484
+msgid "Copy Username"
+msgstr "Copiar Usuario"
+
+#: src/interface.c:2485
+msgid "Copy Password"
+msgstr "Copiar Contraseña"
+
+#: src/interface.c:2486
+msgid "Copy Both"
+msgstr "Copiar Ambos"
+
+#: src/interface.c:2487
+msgid "Open Edit Window"
+msgstr "Abrir Ventana Editor"
+
+#: src/interface.c:2489
+msgid "<b>When Activated Entry</b>"
+msgstr "<b>Cuando se activa una Entrada</b>"
+
+#: src/interface.c:2518
+msgid "_Clear target after paste"
+msgstr "_Eliminar objetivo tras pegar"
+
+#: src/interface.c:2522
+msgid "<b>Copy Target</b>"
+msgstr "<b>Copiar Objetivo</b>"
+
+#: src/interface.c:2527
+msgid "Others"
+msgstr "Otros"
+
+#: src/interface.c:2797
+msgid "Generate Entropy"
+msgstr "Generar entropía"
+
+#: src/interface.c:2812
+msgid "<b>Please move your mouse to collecting entropy</b>"
+msgstr "<b>Por favor, mueva el ratón para recopilar entropía</b>"
+
+#: src/interface.c:2844
+msgid "_Show / Hide"
+msgstr "_Mostrar / Ocultar"
+
+#: src/interface.c:2852
+msgid "_Lock"
+msgstr "_Bloquear"
+
+#: src/interface.c:2860
+msgid "_Unlock"
+msgstr "_Desbloquear"
+
+#: src/interface.c:2928
+msgid "Icons and Text"
+msgstr "Iconos y texto"
+
+#: src/interface.c:2934
+msgid "Icons Only"
+msgstr "Sólo iconos"
+
+#: src/interface.c:2939
+msgid "Text Only"
+msgstr "Sólo texto"
+
+#: src/interface.c:2949
+msgid "Hide toolbar"
+msgstr "Ocultar barra de herramientas"
+
+#: src/callbacks.c:243
+msgid "Are you sure you want discard changes?"
+msgstr "¿Seguro que desea descartar los cambios?"
+
+#: src/callbacks.c:475 src/callbacks.c:1276 src/fpm.c:335 src/fpm.c:437
+#: src/fpm.c:445 src/fpm.c:924
+msgctxt "key_file"
+msgid "<NONE>"
+msgstr "<NINGUNO>"
+
+#: src/callbacks.c:487
+msgid "Are you sure you want to delete this item?"
+msgstr "¿Está seguro que desea eliminar este elemento?"
+
+#: src/callbacks.c:505 src/callbacks.c:896 src/fpm.c:1603
+#, c-format
+msgid "Passwords in category: %d"
+msgstr "Contraseñas en categoría: %d"
+
+#: src/callbacks.c:530
+msgid "Export passwords"
+msgstr "Exportar contraseñas"
+
+#: src/callbacks.c:546
+msgid "Export type:"
+msgstr "Tipo de exportación:"
+
+#: src/callbacks.c:551 src/callbacks.c:622
+msgid "Plain XML"
+msgstr "XML Plano"
+
+#: src/callbacks.c:557 src/callbacks.c:626
+msgid "Launchers:"
+msgstr "Lanzadores:"
+
+#: src/callbacks.c:561
+msgid "Do not export"
+msgstr "No exportar"
+
+#: src/callbacks.c:562
+msgid "Export only the launchers, which are used in the selected category"
+msgstr ""
+"Exportar sólo los lanzadores que se han usado en la categoría seleccionada"
+
+#: src/callbacks.c:563
+msgid "Export all"
+msgstr "Exportar todo"
+
+#: src/callbacks.c:609
+msgid "Import Password File"
+msgstr "Importar archivo de contraseñas"
+
+#: src/callbacks.c:619
+msgid "Import type:"
+msgstr "Tipo de importación:"
+
+#: src/callbacks.c:629
+msgid "Do not import"
+msgstr "No importar"
+
+#: src/callbacks.c:630
+msgid "Import only new launchers"
+msgstr "Sólo importar nuevos lanzadores"
+
+#: src/callbacks.c:631
+msgid "Import and replace all current launchers"
+msgstr "Importar y reemplazar todos los lanzadores actuales"
+
+#: src/callbacks.c:641
+msgid "Do not change the category of items and import as it is."
+msgstr "No cambiar la categoría de los elementos."
+
+#: src/callbacks.c:688
+#, c-format
+msgid ""
+"Current location of password file:\n"
+"%s\n"
+"\n"
+"Cipher: %s"
+msgstr ""
+"Ubicación actual del archivo de contraseñas:\n"
+"%s\n"
+"\n"
+"Cifrado: %s"
+
+#: src/callbacks.c:703 src/fpm.c:479
+msgid "Do you want to save changes?"
+msgstr "¿Quiere guardar los cambios?"
+
+#: src/callbacks.c:709
+msgid "Open Password File"
+msgstr "Abrir archivo de contraseñas"
+
+#: src/callbacks.c:736
+msgid "Save Password File"
+msgstr "Guardar archivo de contraseñas"
+
+#: src/callbacks.c:747 src/callbacks.c:1253
+msgid "Untitled password file"
+msgstr "Archivo de contraseñas sin título"
+
+#: src/callbacks.c:1242
+msgid "New Password File"
+msgstr "Nuevo archivo de contraseñas"
+
+#: src/callbacks.c:1355
+msgid "Please enter launcher name."
+msgstr "Introduzca nombre del lanzador."
+
+#: src/callbacks.c:1400
+msgid "Hide Key File Dialog"
+msgstr "Ocultar diálogo de Archivo Clave"
+
+#: src/callbacks.c:1497
+msgid "Are you sure you want decrypt and display ALL passwords?"
+msgstr "¿Seguro que desea descifrar y mostrar TODAS las contraseñas?"
+
+#: src/support.c:90 src/support.c:114
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr "No se puede encontrar el archivo pixmap: %s"
+
+#: src/fpm.c:90
+msgid "Title"
+msgstr "Título"
+
+#: src/fpm.c:91
+msgid "URL"
+msgstr "URL"
+
+#: src/fpm.c:93
+msgid "Password"
+msgstr "Contraseña"
+
+#: src/fpm.c:95
+msgid "Notes"
+msgstr "Notas"
+
+#: src/fpm.c:96
+msgid "Launcher"
+msgstr "Lanzador"
+
+#: src/fpm.c:106
+#, c-format
+msgid "Could not open %s"
+msgstr "No se puede abrir %s"
+
+#: src/fpm.c:113
+#, c-format
+msgid ""
+"Could not lock %s\n"
+"File already locked."
+msgstr ""
+"No se puede bloquear %s\n"
+"Archivo ya bloqueado."
+
+#: src/fpm.c:263
+#, c-format
+msgid ""
+"Password exceeded limit of %d characters\n"
+"Your password of %d characters was truncated."
+msgstr ""
+"La contraseña excede el límite de %d caracteres\n"
+"Su contraseña de %d caracteres será recortada."
+
+#: src/fpm.c:538
+msgid "primary selection"
+msgstr "primera selección"
+
+#: src/fpm.c:539
+msgid "user"
+msgstr "usuario"
+
+#: src/fpm.c:543
+msgid "clipboard"
+msgstr "portapapeles"
+
+#: src/fpm.c:546
+msgid "password"
+msgstr "contraseña"
+
+#: src/fpm.c:548
+#, c-format
+msgid "Copy %s to %s."
+msgstr "Copiar %s a %s."
+
+#: src/fpm.c:659
+msgid ""
+"This password's launcher command is undefined.\n"
+"Please define it in the edit launcher preference screen."
+msgstr ""
+"El comando del lanzador de esta contraseña no se ha definido.\n"
+"Asigne un comando en la pantalla de preferencias de lanzador."
+
+#: src/fpm.c:663
+msgid ""
+"This password's launcher is undefined.\n"
+"Please define it in the edit password item screen."
+msgstr ""
+"El lanzador de esta contraseña no se ha definido.\n"
+"Asigne un lanzador en la pantalla de edición de elementos."
+
+#. fpm_message(GTK_WINDOW(glb_win_misc), _("Cannot read key file!"), GTK_MESSAGE_ERROR);
+#: src/fpm.c:691 src/fpm.c:827
+msgid "Cannot read key file!"
+msgstr "¡No es posible leer el archivo de contraseñas!"
+
+#: src/fpm.c:728
+msgid "Password incorrect.  Please try again."
+msgstr "Contraseña incorrecta. Pruebe otra vez."
+
+#. if (fpm_question(GTK_WINDOW(glb_win_misc), _("Old file format detected.\n\nDo you want change password file to new more secure cipher?\n\nPlease take note that it will not be possible to continue open this password file in the earlier version FPM2."))
+#: src/fpm.c:740
+msgid ""
+"Old file format detected.\n"
+"\n"
+"Do you want change password file to new more secure cipher?\n"
+"\n"
+"Please take note that it will not be possible to continue open this password "
+"file in the earlier version FPM2."
+msgstr ""
+"Detectado archivo con formato antiguo.\n"
+"\n"
+"¿Quiere cambiar el archivo de contraseñas a un cifrado nuevo más seguro?\n"
+"\n"
+"Tenga en cuenta que no será posible seguir abriendo este archivo en "
+"versiones anteriores de FPM2."
+
+#: src/fpm.c:758
+msgid "Conversion of password file is done!"
+msgstr "¡Conversión del archivo de contraseñas finalizada!"
+
+#: src/fpm.c:813
+msgid "Sorry, the passwords do not match."
+msgstr "Lo siento, las contraseñas no coinciden."
+
+#: src/fpm.c:818
+msgid "Sorry, your password is too short."
+msgstr "Lo siento, su contraseña es demasiado corta."
+
+#: src/fpm.c:978
+msgid "Information"
+msgstr "Información"
+
+#. g_signal_handlers_disconnect_by_func(gui->tray_icon, G_CALLBACK (tray_icon_on_menu), NULL);
+#: src/fpm.c:1474
+msgid "Figaro's Password Manager 2 - locked"
+msgstr "Figaro's Password Manager 2 - bloqueado"
+
+#: src/fpm.c:1547
+msgid "Question"
+msgstr "Pregunta"
+
+#: src/fpm.c:1560
+msgid "Primary selection"
+msgstr "Primera selección"
+
+#: src/fpm.c:1561
+msgid "Clipboard"
+msgstr "Portapapeles"
+
+#: src/fpm.c:1567
+msgid ""
+"\n"
+"Please select a row."
+msgstr ""
+"\n"
+"Seleccione una fila."
+
+#: src/fpm.h:68
+msgid "<ALL CATEGORIES>"
+msgstr "<TODAS CATEGORÍAS>"
+
+#: src/fpm.h:69
+msgid "<DEFAULTS>"
+msgstr "<POR DEFECTO>"
+
+#: src/fpm.h:70
+msgctxt "category"
+msgid "<NONE>"
+msgstr "<NINGUNA>"
+
+#. chmod(file_name, S_IRUSR | S_IWUSR);
+#. cmd = g_strdup_printf("chmod 0600 %s", file_name);
+#. fpm_execute_shell(cmd);
+#. g_free(cmd);
+#.
+#: src/fpm_file.c:232
+#, c-format
+msgid "Saved %d password(s)."
+msgstr "Guardadas %d contraseña(s)."
+
+#. cmd = g_strdup_printf("chmod 0600 %s", file_name);
+#. fpm_execute_shell(cmd);
+#. g_free(cmd);
+#.
+#: src/fpm_file.c:331
+#, c-format
+msgid "Exported clear XML passwords to %s."
+msgstr "Exportado XML de contraseñas sin cifrar a %s."
+
+#: src/fpm_file.c:370
+#, c-format
+msgid ""
+"Sorry, the password file cannot be read because it uses a future file "
+"format. Please download the latest version of FPM2 and try again.\n"
+msgstr ""
+"Lo siento, el archivo de contraseñas no se puede leer porque utiliza un "
+"formato de fichero más nuevo. Descargue la última versión de FPM2 y vuelva a "
+"intentarlo.\n"
+
+#: src/fpm_file.c:597
+msgid "File is not XML?"
+msgstr "¿El archivo no es XML?"
+
+#: src/fpm_file.c:603
+msgid "File is not valid FPM2 password file."
+msgstr "No es un fichero válido de contraseñas de FPM2"
+
+#: src/fpm_file.c:613 src/fpm_file.c:670
+msgid "Invalid password file."
+msgstr "Archivo de contraseñas incorrecto."
+
+#: src/fpm_file.c:738
+#, c-format
+msgid "Imported %d password(s)."
+msgstr "Importadas %d contraseña(s)."
+
+#~ msgid "Unrecognized option.\n"
+#~ msgstr "Opción desconocida.\n"
+
+#~ msgid "_Preferences"
+#~ msgstr "_Preferencias"
+
+#~ msgid "Search Conditions"
+#~ msgstr "Condiciones de búsqueda"
+
+#~ msgid "Could not create a link to %s"
+#~ msgstr "No se puede crear un enlace a %s"
+
+#~ msgid "Could not fstat %s"
+#~ msgstr "No se puede fstat %s"
+
+#~ msgid ""
+#~ "Lock file %s exists.\n"
+#~ "If you know this to be an error, clean up the\n"
+#~ "lock files inthe directory %s."
+#~ msgstr ""
+#~ "Existe el archivo de bloqueo %s\n"
+#~ "Si sabe que esto es un error, elimine los archivos de bloqueo en la "
+#~ "carpeta %s"
+
+#~ msgid "Loaded %d password(s)."
+#~ msgstr "Cargadas %d contraseña(s)."
+
+#~ msgid "FPM2: Launcher Preferences"
+#~ msgstr "FPM2: Preferencias de lanzador"
+
+#~ msgid "Plain text"
+#~ msgstr "Texto plano"
+
+#~ msgid "CSV file"
+#~ msgstr "Archivo CSV"
+
+#~ msgid "_Copy Both"
+#~ msgstr "Copiar a_mbos"
+
+#, fuzzy
+#~ msgid "Du_plicate Item"
+#~ msgstr "Bo_rrar elemento"
+
+#, fuzzy
+#~ msgid "category|<NONE>"
+#~ msgstr "Categoría"
+
+#~ msgid "<NONE>"
+#~ msgstr "<NINGUNA>"
+
+#, fuzzy
+#~ msgid "FPM2: New Password File"
+#~ msgstr "FPM2: Nuevo archivo de contraseñas"
+
+#~ msgid "Edit"
+#~ msgstr "Editar"
+
+#~ msgid "Delete"
+#~ msgstr "Eliminar"
+
+#~ msgid "<Choose a launcher>"
+#~ msgstr "<Seleccione un lanzador>"
+
+#~ msgid "Please select which launcher you wish to edit."
+#~ msgstr "Por favor, seleccione el lanzador que desea editar."
+
+#~ msgid "Please select which launcher you wish to delete."
+#~ msgstr "Por favor, seleccione el lanzador que desea eliminar."
+
+#~ msgid "Enter your password here."
+#~ msgstr "Introduzca su contraseña aquí."
+
+#~ msgid "All Files"
+#~ msgstr "Todos archivos"
+
+#, fuzzy
+#~ msgid "Save Export Password File"
+#~ msgstr "Guardar archivo de contraseñas exportado"
+
+#~ msgid "New Password Entry"
+#~ msgstr "Nueva entrada de contraseña"
+
+#~ msgid "Edit Password Entry"
+#~ msgstr "Editar entrada de contraseña"
+
+#~ msgid "Run launcher"
+#~ msgstr "Ejecutar lanzador"
+
+#~ msgid "Copy user field to clipboard"
+#~ msgstr "Copiar campo usuario al portapapeles"
+
+#~ msgid "Copy password field to clipboard"
+#~ msgstr "Copiar campo contraseña al portapapeles"
+
+#, fuzzy
+#~ msgid "_Delete item"
+#~ msgstr "_Eliminar entrada"
+
+#~ msgid "Please select a row.\n"
+#~ msgstr "Seleccione una fila.\n"

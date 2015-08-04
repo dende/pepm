@@ -1,0 +1,95 @@
+0.79
+    - use xdg-open instead of gnome-moz-remote (Christoph Thompson)
+    - fixed grammatical error in entropy collection dialog (Stefano Rivera)
+    - fixed missing format argument in gtk_message_dialog() (Daniel T Chen)
+    - fixed incorrectly call xmlCleanupParser() (Daniel T Chen)
+    - Autotools update
+
+0.78
+    - fixed crash in master password dialog after open keyfile
+    - disable (gray out) toolbar button and menu entries which require a row to be selected
+    - use MD5 and SHA-256 from GLib
+
+0.77
+    - added Russian translation by Boorkov Sergey aka Leo
+    - added user selectable columns view
+    - added option for select action when activate entry
+    - added option for open search dialog on startup
+    - added hidden option for disable remembering main window position
+    - fixed search in <DEFAULT> and <NONE> category
+
+0.76.1
+    - fixed crash when ~/.fpm/ do not exists
+
+0.76
+    - added French translation by Christoph J. Thompson
+    - added Bulgarian translation by Yovko Yovkov
+    - added Basque translation by Ales Zabala Alava (Shagi)
+    - added Italian translation by Nicola Jelmorini
+    - added CLI option for start hidden in tray (-t)
+    - run item launcher on press Enter or Space
+    - update & translate desktop file (Christoph J. Thompson)
+    - move logo pixmap in right place (Christoph J. Thompson)
+    - change file locking method from lock file to flock
+    - fixed input password length widget in password generator
+    - fixed linking with --as-needed
+
+0.75
+    - new cipher AES-256 with PBKDF2 using HMAC-SHA-256 with 8192 iterations set as default
+    - added option for two factor authentication (password and key file)
+    - added "paste username then password" function
+    - added copy target selection and clear target after paste
+    - added option for open selected category on startup
+    - added <NONE> category for password without it
+    - added clone item function
+    - added toolbar style menu
+    - added Spanish translation by Antonio Rguez. Capita
+    - import/export now fully functional
+    - passwords file is now fully encrypted
+    - preparation for plugin system
+    - fixed bug that prevented use FPM2 on big-endian architecture
+    - fixed some memleaks
+    - code cleanup
+
+0.72
+    - tray icon with auto-minimise and auto-locking
+    - added Hungarian translation by Peter Polonkai
+    - entries sorting is now locale-aware and it is possible sort by title/URL/user
+    - use the current category as the default category when adding a new entry
+    - clicking on two different entries is no more interpreted as double-click
+    - remember last main window position
+
+0.71
+    - fixed file loading specified by command line option
+    - change logo format from xpm to png
+    - code cleanup
+
+0.70
+    - updated translation
+    - advanced search field
+    - context menu
+    - replaced some deprecated widgets
+    - no more Gnome, pure GTK now
+
+0.68
+    - added German translation by Mike Constabel
+    - remember columns width
+
+0.67
+    - added menu item for add/edit
+    - added more key shortcuts
+    - updated Czech translation
+
+0.66
+    - remember last selected category
+    - remember last main window size
+
+0.65
+    - localization support
+    - added ability to load/save other password file 
+    - added preferences to control autosave/backup
+    - code cleaning from Gnome centric to pure GTK (still unfinished)
+
+0.60
+    - initial port from GTK1
+    - dropped gpasman import
