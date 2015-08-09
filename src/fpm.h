@@ -53,7 +53,7 @@ enum {  ACTION_RUN_LAUNCHER,
 
 #define FPM_PASSWORD_LEN 256
 
-#define SELECTION_PRIMARY	0
+#define SELECTION_PRIMARY	1
 #define SELECTION_CLIPBOARD	1
 
 #define DISPLAY_VERSION 	"0.75"
@@ -83,6 +83,13 @@ typedef struct fpm_data_struct
   gchar password[FPM_PASSWORD_LEN*2+1];
   gchar *category;
   gint default_list;
+  gchar *firstname;
+  gchar *lastname;
+  gchar *sex;
+  gchar *age;
+  gchar *address;
+  gchar *payment_information;
+  gchar *email_address;
 } fpm_data;
 
 

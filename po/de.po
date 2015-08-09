@@ -168,8 +168,8 @@ msgid "Title:"
 msgstr "Titel:"
 
 #: src/interface.c:849
-msgid "URL / Arg:"
-msgstr "URL / Arg:"
+msgid "URL:"
+msgstr "URL:"
 
 #: src/interface.c:856
 msgid "Password:"
@@ -181,7 +181,7 @@ msgstr "Zeige Passwort"
 
 #: src/interface.c:900
 msgid "User Name:"
-msgstr "Benutzername"
+msgstr "Benutzername:"
 
 #: src/interface.c:907 src/callbacks.c:569 src/callbacks.c:635
 msgid "Category:"
@@ -277,11 +277,11 @@ msgstr "Erzeuge!"
 
 #: src/interface.c:1515
 msgid "Choose Master Password"
-msgstr "Wähle ein HauptAAAAAApasswort"
+msgstr "Wähle ein Hauptpasswort"
 
 #: src/interface.c:1537
-msgid "Welcome to Figaro's Password Manager 2"
-msgstr "Willkommen zum Figaro's Password Manager 2"
+msgid "Welcome to Privacy Enhanced Password Manager"
+msgstr "Willkommen zum Privacy Enhanced Password Manager"
 
 #: src/interface.c:1558
 msgid ""
@@ -290,7 +290,7 @@ msgid ""
 "your password list."
 msgstr ""
 "Bitte wähle ein Passwort, mit dem Deine gespeicherten Passwörter "
-"verschlüsselt werden.Es ist wichtig, dass Du Dir das Passwort merkst, ohne "
+"verschlüsselt werden.    Es ist wichtig, dass Du Dir das Passwort merkst, ohne "
 "dieses kann die Passwortdatei nicht mehr geöffnet werden."
 
 #: src/interface.c:1586

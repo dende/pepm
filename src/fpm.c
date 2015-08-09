@@ -182,7 +182,7 @@ fpm_edit_passitem(GtkWidget** win_edit_ptr, fpm_data* data)
   *win_edit_ptr = create_dialog_edit_passitem();
 
   /* Populate drop down boxes on edit screen */
-  fpm_create_category_list(1);
+/*  fpm_create_category_list(1);
   combo_box_category = GTK_COMBO_BOX_ENTRY(lookup_widget(*win_edit_ptr, "combo_box_category"));
   g_assert(glb_cat_string_list != NULL);
   fpm_gtk_combo_set_popdown_strings(GTK_COMBO_BOX(combo_box_category), glb_cat_string_list, data->category);
@@ -193,15 +193,18 @@ fpm_edit_passitem(GtkWidget** win_edit_ptr, fpm_data* data)
   combo_box_launcher = GTK_COMBO_BOX(lookup_widget(*win_edit_ptr, "combo_box_launcher"));
   if(glb_launcher_string_list!=NULL)
     fpm_gtk_combo_set_popdown_strings(combo_box_launcher, glb_launcher_string_list, data->launcher);
+    */
 
   /* Load the data into the dialog box */
   fpm_set_entry(*win_edit_ptr, "entry_title", data->title);
   fpm_set_entry(*win_edit_ptr, "entry_arg", data->arg);
   fpm_set_entry(*win_edit_ptr, "entry_user", data->user);
 
+/*
   gtk_toggle_button_set_active(
 	GTK_TOGGLE_BUTTON(lookup_widget(*win_edit_ptr, "checkbutton_default")),
 	data->default_list);
+  */
 
   ix = strlen(data->password) / 2;
   fpm_decrypt_field(old_context, cleartext, data->password, ix);
@@ -245,11 +248,18 @@ fpm_save_passitem(GtkWidget* win_edit, fpm_data* data)
   data->title = fpm_get_entry(win_edit, "entry_title");
   data->arg = fpm_get_entry(win_edit, "entry_arg");
   data->user = fpm_get_entry(win_edit, "entry_user");
+  /* PEPMCHANGE
   data->category = fpm_get_combo_entry(win_edit, "combo_box_category");
   data->launcher = fpm_get_combo_entry(win_edit, "combo_box_launcher");
+  */
+  data->category = g_strdup("<NONE>");
+  data->launcher = g_strdup("Web");
 
   /* Update default check box */
+  /*PEPMCHANGE
   data->default_list = (GTK_TOGGLE_BUTTON(lookup_widget(win_edit, "checkbutton_default"))->active);
+  */
+  data->default_list = 0;
 
   /* Update password */
   entry = GTK_ENTRY(lookup_widget(win_edit, "entry_password"));
@@ -430,18 +440,19 @@ fpm_init(char* opt_file_name, int tray_on_startup)
     /* No passwords file so ask for master password */
     glb_win_misc = create_dialog_cpw();
 //    gui->pass_window = create_dialog_cpw();
-    combo_box = GTK_COMBO_BOX(lookup_widget(glb_win_misc, "key_file_combo"));
+/*    combo_box = GTK_COMBO_BOX(lookup_widget(glb_win_misc, "key_file_combo"));
     gtk_combo_box_append_text (combo_box, C_("key_file","<NONE>"));
     gtk_combo_box_set_active(combo_box, 0);
+    */
     gtk_widget_show(glb_win_misc);
   } else {
 //    glb_win_misc = create_dialog_password();
     gui->pass_window = create_dialog_password();
 
-    combo_box = GTK_COMBO_BOX(lookup_widget(gui->pass_window, "key_file_combo"));
+/*    combo_box = GTK_COMBO_BOX(lookup_widget(gui->pass_window, "key_file_combo"));
     gtk_combo_box_append_text (combo_box, C_("key_file","<NONE>"));
     gtk_combo_box_set_active(combo_box, 0);
-
+*/
 
   if(tray_on_startup) {
     ini->enable_tray_icon = TRUE;
@@ -556,7 +567,7 @@ fpm_clipboard_set(fpm_clipboard *clipboard) {
 void
 fpm_clipboard_init(fpm_data *data, gint selection, gboolean is_password, gboolean multi_select) {
 
-    GdkAtom SELECTION[] = { GDK_SELECTION_PRIMARY, GDK_SELECTION_CLIPBOARD };
+    GdkAtom SELECTION[] = { GDK_SELECTION_CLIPBOARD, GDK_SELECTION_CLIPBOARD };
     fpm_clipboard *clipboard;
 
     clipboard = g_malloc0(sizeof(fpm_clipboard));
@@ -678,7 +689,7 @@ fpm_check_password()
      gtk_entry_set_text(entry, "");
 
 //  combo_box = GTK_COMBO_BOX(lookup_widget(glb_win_misc, "key_file_combo"));
-  combo_box = GTK_COMBO_BOX(lookup_widget(gui->pass_window, "key_file_combo"));
+//  combo_box = GTK_COMBO_BOX(lookup_widget(gui->pass_window, "key_file_combo"));
 
   if(gtk_combo_box_get_active(combo_box)) {
     guchar kf_hash[SHA256_DIGEST_LENGTH + 1] = {0};
@@ -817,7 +828,7 @@ void fpm_set_password()
     return;
   }
 
-  combo_box = GTK_COMBO_BOX(lookup_widget(glb_win_misc, "key_file_combo"));
+/*  combo_box = GTK_COMBO_BOX(lookup_widget(glb_win_misc, "key_file_combo"));
   if(gtk_combo_box_get_active(combo_box)) {
     guchar kf_hash[SHA256_DIGEST_LENGTH + 1] = {0};
 
@@ -828,6 +839,7 @@ void fpm_set_password()
     pw1 = g_strdup_printf("%s%s", pw1, kf_hash);
     wipememory(kf_hash, sizeof(kf_hash));
   }
+  */
 
   if(old_context == NULL)
   {
@@ -888,8 +900,8 @@ void fpm_init_launchers()
   launcher = g_malloc0(sizeof(fpm_launcher));
   launcher->title=g_strdup("Web");
   launcher->cmdline=g_strdup("xdg-open \"$a\"");
-  launcher->copy_user = 2;
-  launcher->copy_password = 1;
+  launcher->copy_user = 0;
+  launcher->copy_password = 2;
   list = g_list_append(list, launcher);
 
   launcher = g_malloc0(sizeof(fpm_launcher));
@@ -1025,7 +1037,7 @@ void fpm_ini_load()
 	state->category = FPM_ALL_CAT_MSG;
 
 	ini->copy_target = SELECTION_PRIMARY;
-	ini->clear_target = TRUE;
+	ini->clear_target = FALSE;
 
 	ini->dont_remember_position = FALSE;
 	ini->dblclick_action = ACTION_RUN_LAUNCHER;

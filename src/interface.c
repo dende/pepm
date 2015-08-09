@@ -808,18 +808,27 @@ create_dialog_edit_passitem (void)
   GtkWidget *button_jump;
   GtkWidget *entry_title;
   GtkWidget *label6;
+/*
   GtkWidget *label28;
   GtkWidget *checkbutton_default;
+  */
   GtkWidget *scrolledwindow2;
   GtkWidget *text_notes;
   GtkWidget *label8;
+  /*
   GtkWidget *label29;
   GtkWidget *combo_box_category;
   GtkWidget *combo_box_launcher;
+  */
   GtkWidget *dialog_action_area2;
   GtkWidget *button_generate;
   GtkWidget *button_cancel;
   GtkWidget *button_ok;
+
+  GtkWidget *firstname_label;
+  GtkWidget *firstname_input;
+  GtkWidget *lastname_label;
+  GtkWidget *lastname_input;
 
   dialog_edit_passitem = gtk_dialog_new ();
   gtk_window_set_title (GTK_WINDOW (dialog_edit_passitem), _("View / Edit Password Item"));
@@ -858,7 +867,7 @@ create_dialog_edit_passitem (void)
                     (GtkAttachOptions) (0), 0, 0);
   gtk_label_set_justify (GTK_LABEL (label4), GTK_JUSTIFY_CENTER);
 
-  label5 = gtk_label_new (_("URL / Arg:"));
+  label5 = gtk_label_new (_("URL:"));
   gtk_widget_show (label5);
   gtk_table_attach (GTK_TABLE (table1), label5, 0, 1, 1, 2,
                     (GtkAttachOptions) (0),
@@ -916,7 +925,7 @@ create_dialog_edit_passitem (void)
                     (GtkAttachOptions) (0), 2, 0);
   gtk_label_set_justify (GTK_LABEL (label6), GTK_JUSTIFY_CENTER);
 
-  label28 = gtk_label_new (_("Category:"));
+/*  label28 = gtk_label_new (_("Category:"));
   gtk_widget_show (label28);
   gtk_table_attach (GTK_TABLE (table1), label28, 0, 1, 4, 5,
                     (GtkAttachOptions) (0),
@@ -928,6 +937,7 @@ create_dialog_edit_passitem (void)
   gtk_table_attach (GTK_TABLE (table1), checkbutton_default, 1, 2, 5, 6,
                     (GtkAttachOptions) (GTK_FILL),
                     (GtkAttachOptions) (0), 0, 0);
+                    */
 
   scrolledwindow2 = gtk_scrolled_window_new (NULL, NULL);
   gtk_widget_show (scrolledwindow2);
@@ -951,6 +961,7 @@ create_dialog_edit_passitem (void)
   gtk_label_set_justify (GTK_LABEL (label8), GTK_JUSTIFY_RIGHT);
   gtk_misc_set_alignment (GTK_MISC (label8), 0.5, 0);
 
+/*
   label29 = gtk_label_new (_("Launcher:"));
   gtk_widget_show (label29);
   gtk_table_attach (GTK_TABLE (table1), label29, 0, 1, 7, 8,
@@ -958,18 +969,20 @@ create_dialog_edit_passitem (void)
                     (GtkAttachOptions) (0), 0, 0);
   gtk_label_set_justify (GTK_LABEL (label29), GTK_JUSTIFY_CENTER);
 
+  
   combo_box_category = gtk_combo_box_entry_new_text ();
   gtk_widget_show (combo_box_category);
   gtk_table_attach (GTK_TABLE (table1), combo_box_category, 1, 2, 4, 5,
                     (GtkAttachOptions) (GTK_FILL),
                     (GtkAttachOptions) (GTK_FILL), 0, 0);
+                    
 
   combo_box_launcher = gtk_combo_box_new_text ();
   gtk_widget_show (combo_box_launcher);
   gtk_table_attach (GTK_TABLE (table1), combo_box_launcher, 1, 2, 7, 8,
                     (GtkAttachOptions) (GTK_FILL),
                     (GtkAttachOptions) (GTK_FILL), 0, 0);
-
+*/
   dialog_action_area2 = GTK_DIALOG (dialog_edit_passitem)->action_area;
   gtk_widget_show (dialog_action_area2);
   gtk_button_box_set_layout (GTK_BUTTON_BOX (dialog_action_area2), GTK_BUTTONBOX_SPREAD);
@@ -985,6 +998,8 @@ create_dialog_edit_passitem (void)
   button_ok = gtk_button_new_from_stock ("gtk-ok");
   gtk_widget_show (button_ok);
   gtk_dialog_add_action_widget (GTK_DIALOG (dialog_edit_passitem), button_ok, 0);
+
+
 
   g_signal_connect ((gpointer) dialog_edit_passitem, "delete_event",
                     G_CALLBACK (on_dialog_edit_passitem_delete_event),
@@ -1022,14 +1037,19 @@ create_dialog_edit_passitem (void)
   GLADE_HOOKUP_OBJECT (dialog_edit_passitem, button_jump, "button_jump");
   GLADE_HOOKUP_OBJECT (dialog_edit_passitem, entry_title, "entry_title");
   GLADE_HOOKUP_OBJECT (dialog_edit_passitem, label6, "label6");
+/*
   GLADE_HOOKUP_OBJECT (dialog_edit_passitem, label28, "label28");
   GLADE_HOOKUP_OBJECT (dialog_edit_passitem, checkbutton_default, "checkbutton_default");
+  */
   GLADE_HOOKUP_OBJECT (dialog_edit_passitem, scrolledwindow2, "scrolledwindow2");
   GLADE_HOOKUP_OBJECT (dialog_edit_passitem, text_notes, "text_notes");
   GLADE_HOOKUP_OBJECT (dialog_edit_passitem, label8, "label8");
+  
+  /*
   GLADE_HOOKUP_OBJECT (dialog_edit_passitem, label29, "label29");
   GLADE_HOOKUP_OBJECT (dialog_edit_passitem, combo_box_category, "combo_box_category");
   GLADE_HOOKUP_OBJECT (dialog_edit_passitem, combo_box_launcher, "combo_box_launcher");
+  */
   GLADE_HOOKUP_OBJECT_NO_REF (dialog_edit_passitem, dialog_action_area2, "dialog_action_area2");
   GLADE_HOOKUP_OBJECT (dialog_edit_passitem, button_generate, "button_generate");
   GLADE_HOOKUP_OBJECT (dialog_edit_passitem, button_cancel, "button_cancel");
@@ -1197,15 +1217,17 @@ create_dialog_password (void)
   g_signal_connect ((gpointer) dialog_password, "delete_event",
                     G_CALLBACK (on_dialog_password_delete_event),
                     NULL);
-  g_signal_connect ((gpointer) key_file_select_btn, "clicked",
+/*  g_signal_connect ((gpointer) key_file_select_btn, "clicked",
                     G_CALLBACK (on_select_key_file_clicked),
                     NULL);
+
   g_signal_connect ((gpointer) btn_show_key_file, "clicked",
                     G_CALLBACK (on_btn_show_key_file_clicked),
                     NULL);
   g_signal_connect ((gpointer) button_password_cancel, "clicked",
                     G_CALLBACK (on_button_password_cancel_clicked),
                     NULL);
+                    */
   g_signal_connect ((gpointer) button_password_ok, "clicked",
                     G_CALLBACK (on_button_password_ok_clicked),
                     NULL);
@@ -1504,6 +1526,7 @@ create_dialog_cpw (void)
   GtkWidget *label64;
   GtkWidget *label65;
   GtkWidget *label63;
+/*
   GtkWidget *frame17;
   GtkWidget *alignment13;
   GtkWidget *vbox23;
@@ -1514,6 +1537,7 @@ create_dialog_cpw (void)
   GtkWidget *select_key_file;
   GtkWidget *image500;
   GtkWidget *label67;
+  */
   GtkWidget *dialog_action_area5;
   GtkWidget *hbuttonbox4;
   GtkWidget *button_cpw_cancel;
@@ -1618,7 +1642,7 @@ create_dialog_cpw (void)
   gtk_frame_set_label_widget (GTK_FRAME (frame16), label63);
   gtk_label_set_use_markup (GTK_LABEL (label63), TRUE);
 
-  frame17 = gtk_frame_new (NULL);
+  /*frame17 = gtk_frame_new (NULL);
   gtk_widget_show (frame17);
   gtk_box_pack_start (GTK_BOX (vbox5), frame17, TRUE, TRUE, 2);
   gtk_container_set_border_width (GTK_CONTAINER (frame17), 10);
@@ -1666,6 +1690,7 @@ create_dialog_cpw (void)
   gtk_widget_show (label67);
   gtk_frame_set_label_widget (GTK_FRAME (frame17), label67);
   gtk_label_set_use_markup (GTK_LABEL (label67), TRUE);
+  */
 
   dialog_action_area5 = GTK_DIALOG (dialog_cpw)->action_area;
   gtk_widget_show (dialog_action_area5);
@@ -1689,9 +1714,11 @@ create_dialog_cpw (void)
   g_signal_connect ((gpointer) dialog_cpw, "delete_event",
                     G_CALLBACK (on_button_cpw_cancel_clicked),
                     NULL);
+/*
   g_signal_connect ((gpointer) select_key_file, "clicked",
                     G_CALLBACK (on_select_key_file_clicked),
                     NULL);
+*/
   g_signal_connect ((gpointer) button_cpw_cancel, "clicked",
                     G_CALLBACK (on_button_cpw_cancel_clicked),
                     NULL);
@@ -1701,7 +1728,7 @@ create_dialog_cpw (void)
 
   gtk_label_set_mnemonic_widget (GTK_LABEL (label64), entry_cpw1);
   gtk_label_set_mnemonic_widget (GTK_LABEL (label65), entry_cpw2);
-  gtk_label_set_mnemonic_widget (GTK_LABEL (label69), select_key_file);
+//  gtk_label_set_mnemonic_widget (GTK_LABEL (label69), select_key_file);
 
   /* Store pointers to all widgets, for use by lookup_widget(). */
   GLADE_HOOKUP_OBJECT_NO_REF (dialog_cpw, dialog_cpw, "dialog_cpw");
@@ -1719,7 +1746,7 @@ create_dialog_cpw (void)
   GLADE_HOOKUP_OBJECT (dialog_cpw, label64, "label64");
   GLADE_HOOKUP_OBJECT (dialog_cpw, label65, "label65");
   GLADE_HOOKUP_OBJECT (dialog_cpw, label63, "label63");
-  GLADE_HOOKUP_OBJECT (dialog_cpw, frame17, "frame17");
+/*  GLADE_HOOKUP_OBJECT (dialog_cpw, frame17, "frame17");
   GLADE_HOOKUP_OBJECT (dialog_cpw, alignment13, "alignment13");
   GLADE_HOOKUP_OBJECT (dialog_cpw, vbox23, "vbox23");
   GLADE_HOOKUP_OBJECT (dialog_cpw, label68, "label68");
@@ -1728,7 +1755,7 @@ create_dialog_cpw (void)
   GLADE_HOOKUP_OBJECT (dialog_cpw, key_file_combo, "key_file_combo");
   GLADE_HOOKUP_OBJECT (dialog_cpw, select_key_file, "select_key_file");
   GLADE_HOOKUP_OBJECT (dialog_cpw, image500, "image500");
-  GLADE_HOOKUP_OBJECT (dialog_cpw, label67, "label67");
+  GLADE_HOOKUP_OBJECT (dialog_cpw, label67, "label67");*/
   GLADE_HOOKUP_OBJECT_NO_REF (dialog_cpw, dialog_action_area5, "dialog_action_area5");
   GLADE_HOOKUP_OBJECT (dialog_cpw, hbuttonbox4, "hbuttonbox4");
   GLADE_HOOKUP_OBJECT (dialog_cpw, button_cpw_cancel, "button_cpw_cancel");

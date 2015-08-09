@@ -234,10 +234,7 @@ on_dialog_edit_passitem_delete_event   (GtkWidget       *widget,
   if (strcmp(glb_edit_data->title, fpm_get_entry(gui->edit_window, "entry_title"))
 	|| strcmp(glb_edit_data->arg, fpm_get_entry(gui->edit_window, "entry_arg"))
 	|| strcmp(glb_edit_data->user, fpm_get_entry(gui->edit_window, "entry_user"))
-	|| strcmp(glb_edit_data->category, fpm_get_combo_entry(gui->edit_window, "combo_box_category"))
-	|| strcmp(glb_edit_data->launcher, fpm_get_combo_entry(gui->edit_window, "combo_box_launcher"))
 	|| strcmp(glb_edit_data->notes, entry_notes)
-	|| glb_edit_data->default_list != GTK_TOGGLE_BUTTON(lookup_widget(gui->edit_window, "checkbutton_default"))->active
      ) {
 	if (fpm_question(GTK_WINDOW(gui->edit_window), _("Are you sure you want discard changes?"))
 	    == GTK_RESPONSE_YES) {
@@ -470,9 +467,11 @@ on_item_password_activate              (GtkMenuItem     *menuitem,
     glb_win_misc = create_dialog_cpw();
     gtk_window_set_transient_for(GTK_WINDOW(glb_win_misc), GTK_WINDOW(gui->main_window));
 
+/*
     combo_box = GTK_COMBO_BOX(lookup_widget(glb_win_misc, "key_file_combo"));
     gtk_combo_box_append_text (combo_box, C_("key_file","<NONE>"));
     gtk_combo_box_set_active(combo_box, 0);
+    */
 
     gtk_widget_show(glb_win_misc);
 }
@@ -546,7 +545,7 @@ on_export1_activate                    (GtkMenuItem     *menuitem,
 	gtk_label_new (_("Export type:")), 0,1,0,1,
 	0,0,15,0
 	);
-
+/*
 	combo_box = gtk_combo_box_new_text ();
 	gtk_combo_box_append_text (GTK_COMBO_BOX (combo_box), _("Plain XML"));
 	gtk_combo_box_set_active (GTK_COMBO_BOX (combo_box), 0);
@@ -569,9 +568,11 @@ on_export1_activate                    (GtkMenuItem     *menuitem,
 	gtk_label_new (_("Category:")), 0,1,2,3,
 	0,0,15,0
 	);
+
 	combo_box_category = gtk_combo_box_new_text ();
 	fpm_populate_combo_box(GTK_COMBO_BOX(combo_box_category), state->category);
 	gtk_table_attach_defaults (GTK_TABLE(table), GTK_WIDGET(combo_box_category), 1,2,2,3);
+  */
 
 	gtk_widget_show_all (table);
 
@@ -581,15 +582,18 @@ on_export1_activate                    (GtkMenuItem     *menuitem,
 
         gchar *filename;
         gchar *export_category;
+/*
         gint export_launchers;
+        */
 
         filename = gtk_file_chooser_get_filename (GTK_FILE_CHOOSER (dialog));
-        export_launchers = gtk_combo_box_get_active (GTK_COMBO_BOX(combo_box));
-        export_category = gtk_combo_box_get_active_text (GTK_COMBO_BOX(combo_box_category));
+ //       export_launchers = gtk_combo_box_get_active (GTK_COMBO_BOX(combo_box));
+ //       export_category = gtk_combo_box_get_active_text (GTK_COMBO_BOX(combo_box_category));
+          export_category = g_strdup(FPM_NONE_CAT_MSG);
+          printf("%s", export_category);
+        fpm_file_export(filename, 0, export_category);
 
-        fpm_file_export(filename, export_launchers, export_category);
-
-        g_free(export_category);
+ //       g_free(export_category);
         g_free(filename);
     }
   gtk_widget_destroy (dialog);

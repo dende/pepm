@@ -1,3 +1,7 @@
+*.bak
+.anjuta*
+*.anjuta
+src/*.bak
 compile
 autom4te.cache/
 data/pepm.desktop
