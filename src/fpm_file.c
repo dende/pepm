@@ -205,6 +205,13 @@ fpm_file_save(gchar* file_name, gboolean convert)
     new_leaf_encrypt(doc, item, (xmlChar *)"title", data->title);
     new_leaf_encrypt(doc, item, (xmlChar *)"user", data->user);
     new_leaf_encrypt(doc, item, (xmlChar *)"url", data->arg);
+    new_leaf_encrypt(doc, item, (xmlChar *)"firstname", data->firstname);
+    new_leaf_encrypt(doc, item, (xmlChar *)"lastname", data->lastname);
+    new_leaf_encrypt(doc, item, (xmlChar *)"sex", data->sex);
+    new_leaf_encrypt(doc, item, (xmlChar *)"age", data->age);
+    new_leaf_encrypt(doc, item, (xmlChar *)"address", data->address);
+    new_leaf_encrypt(doc, item, (xmlChar *)"payment_information", data->payment_information);
+    new_leaf_encrypt(doc, item, (xmlChar *)"email_address", data->email_address);
 
     if(convert)
 	new_leaf_encrypt_password(doc, item, (xmlChar *)"password", data->password);
@@ -336,6 +343,7 @@ fpm_file_export(gchar *file_name, gint export_launchers, gchar *export_category)
 gint
 passfile_load(gchar* file_name)
 {
+
   xmlDocPtr doc;
   xmlNodePtr list, item, attr;
   fpm_data* data;
@@ -495,6 +503,13 @@ passfile_load(gchar* file_name)
     data->title=g_strdup("");
     data->arg=g_strdup("");
     data->user=g_strdup("");
+    data->firstname=g_strdup("");
+    data->lastname=g_strdup("");
+    data->sex=g_strdup("");
+    data->age=g_strdup("");
+    data->address=g_strdup("");
+    data->payment_information=g_strdup("");
+    data->email_address=g_strdup("");
     data->notes=g_strdup("");
     data->category=g_strdup("");
     data->launcher=g_strdup("");
@@ -508,9 +523,17 @@ passfile_load(gchar* file_name)
       passfile_upd_attr(attr, "url", &data->arg);
 //      passfile_upd_attr(attr, "arg", &data->arg);
       passfile_upd_attr(attr, "user", &data->user);
+      passfile_upd_attr(attr, "firstname", &data->firstname);
+      passfile_upd_attr(attr, "lastname", &data->lastname);
+      passfile_upd_attr(attr, "sex", &data->sex);
+      passfile_upd_attr(attr, "age", &data->age);
+      passfile_upd_attr(attr, "address", &data->address);
+      passfile_upd_attr(attr, "payment_information", &data->payment_information);
+      passfile_upd_attr(attr, "email_address", &data->email_address);
       passfile_upd_attr(attr, "notes", &data->notes);
       passfile_upd_attr(attr, "category", &data->category);
       passfile_upd_attr(attr, "launcher", &data->launcher);
+
       if(!strcmp((char *)attr->name, "default"))
       {
         data->default_list=1;
@@ -682,6 +705,13 @@ fpm_file_import(gchar *file_name, gint import_launchers, gchar *import_category,
     data->title=g_strdup("");
     data->arg=g_strdup("");
     data->user=g_strdup("");
+    data->firstname=g_strdup("");
+    data->lastname=g_strdup("");
+    data->age=g_strdup("");
+    data->sex=g_strdup("");
+    data->address=g_strdup("");
+    data->payment_information=g_strdup("");
+    data->email_address=g_strdup("");
     data->notes=g_strdup("");
     if(strcmp(import_category, FPM_NONE_CAT_MSG))
 	data->category=g_strdup(import_category);
@@ -697,7 +727,13 @@ fpm_file_import(gchar *file_name, gint import_launchers, gchar *import_category,
       passfile_upd_attr(attr, "title", &data->title);
       passfile_upd_attr(attr, "url", &data->arg);
       passfile_upd_attr(attr, "user", &data->user);
-      passfile_upd_attr(attr, "notes", &data->notes);
+      passfile_upd_attr(attr, "firstname", &data->firstname);
+      passfile_upd_attr(attr, "lastname", &data->lastname);
+      passfile_upd_attr(attr, "age", &data->age);
+      passfile_upd_attr(attr, "sex", &data->sex);
+      passfile_upd_attr(attr, "address", &data->address);
+      passfile_upd_attr(attr, "payment_information", &data->payment_information);
+      passfile_upd_attr(attr, "email_address", &data->email_address);
       if(!strcmp(import_category,""))
         passfile_upd_attr(attr, "category", &data->category);
       passfile_upd_attr(attr, "launcher", &data->launcher);

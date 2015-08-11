@@ -829,6 +829,16 @@ create_dialog_edit_passitem (void)
   GtkWidget *firstname_input;
   GtkWidget *lastname_label;
   GtkWidget *lastname_input;
+  GtkWidget *age_label;
+  GtkWidget *age_input;
+  GtkWidget *sex_label;
+  GtkWidget *sex_input;
+  GtkWidget *address_label;
+  GtkWidget *address_input;
+  GtkWidget *email_address_label;
+  GtkWidget *email_address_input;
+  GtkWidget *payment_information_label;
+  GtkWidget *payment_information_input;
 
   dialog_edit_passitem = gtk_dialog_new ();
   gtk_window_set_title (GTK_WINDOW (dialog_edit_passitem), _("View / Edit Password Item"));
@@ -849,7 +859,7 @@ create_dialog_edit_passitem (void)
   gtk_widget_show (eventbox1);
   gtk_box_pack_start (GTK_BOX (dialog_vbox2), eventbox1, TRUE, TRUE, 0);
 
-  table1 = gtk_table_new (8, 2, FALSE);
+  table1 = gtk_table_new (13, 2, FALSE);
   gtk_widget_show (table1);
   gtk_container_add (GTK_CONTAINER (eventbox1), table1);
 
@@ -865,21 +875,21 @@ create_dialog_edit_passitem (void)
   gtk_table_attach (GTK_TABLE (table1), label4, 0, 1, 0, 1,
                     (GtkAttachOptions) (0),
                     (GtkAttachOptions) (0), 0, 0);
-  gtk_label_set_justify (GTK_LABEL (label4), GTK_JUSTIFY_CENTER);
+  gtk_label_set_justify (GTK_LABEL (label4), GTK_JUSTIFY_RIGHT);
 
   label5 = gtk_label_new (_("URL:"));
   gtk_widget_show (label5);
   gtk_table_attach (GTK_TABLE (table1), label5, 0, 1, 1, 2,
                     (GtkAttachOptions) (0),
                     (GtkAttachOptions) (0), 0, 0);
-  gtk_label_set_justify (GTK_LABEL (label5), GTK_JUSTIFY_CENTER);
+  gtk_label_set_justify (GTK_LABEL (label5), GTK_JUSTIFY_RIGHT);
 
   label7 = gtk_label_new (_("Password:"));
   gtk_widget_show (label7);
   gtk_table_attach (GTK_TABLE (table1), label7, 0, 1, 3, 4,
                     (GtkAttachOptions) (0),
                     (GtkAttachOptions) (0), 0, 0);
-  gtk_label_set_justify (GTK_LABEL (label7), GTK_JUSTIFY_CENTER);
+  gtk_label_set_justify (GTK_LABEL (label7), GTK_JUSTIFY_RIGHT);
 
   hbox1 = gtk_hbox_new (FALSE, 0);
   gtk_widget_show (hbox1);
@@ -939,9 +949,116 @@ create_dialog_edit_passitem (void)
                     (GtkAttachOptions) (0), 0, 0);
                     */
 
+
+
+  firstname_input = gtk_entry_new ();
+  gtk_widget_show (firstname_input);
+  gtk_table_attach (GTK_TABLE (table1), firstname_input, 1, 2, 4, 5,
+                    (GtkAttachOptions) (GTK_EXPAND | GTK_FILL),
+                    (GtkAttachOptions) (0), 0, 0);
+  gtk_entry_set_invisible_char (GTK_ENTRY (firstname_input), 8226);
+
+
+  firstname_label = gtk_label_new (_("Firstname:"));
+  gtk_widget_show (firstname_label);
+  gtk_table_attach (GTK_TABLE (table1), firstname_label, 0, 1, 4, 5,
+                    (GtkAttachOptions) (0),
+                    (GtkAttachOptions) (0), 0, 0);
+  gtk_label_set_justify (GTK_LABEL (firstname_label), GTK_JUSTIFY_RIGHT);
+
+  lastname_input = gtk_entry_new ();
+  gtk_widget_show (lastname_input);
+  gtk_table_attach (GTK_TABLE (table1), lastname_input, 1, 2, 5, 6,
+                    (GtkAttachOptions) (GTK_EXPAND | GTK_FILL),
+                    (GtkAttachOptions) (0), 0, 0);
+  gtk_entry_set_invisible_char (GTK_ENTRY (lastname_input), 8226);
+
+  lastname_label = gtk_label_new (_("Lastname:"));
+  gtk_widget_show (lastname_label);
+  gtk_table_attach (GTK_TABLE (table1), lastname_label, 0, 1, 5, 6,
+                    (GtkAttachOptions) (0),
+                    (GtkAttachOptions) (0), 0, 0);
+  gtk_label_set_justify (GTK_LABEL (lastname_label), GTK_JUSTIFY_RIGHT);
+
+
+  sex_input = gtk_entry_new ();
+  gtk_widget_show (sex_input);
+  gtk_table_attach (GTK_TABLE (table1), sex_input, 1, 2, 6, 7,
+                    (GtkAttachOptions) (GTK_EXPAND | GTK_FILL),
+                    (GtkAttachOptions) (0), 0, 0);
+  gtk_entry_set_invisible_char (GTK_ENTRY (sex_input), 8226);
+
+  sex_label = gtk_label_new (_("Sex:"));
+  gtk_widget_show (sex_label);
+  gtk_table_attach (GTK_TABLE (table1), sex_label, 0, 1, 6, 7,
+                    (GtkAttachOptions) (0),
+                    (GtkAttachOptions) (0), 0, 0);
+  gtk_label_set_justify (GTK_LABEL (sex_label), GTK_JUSTIFY_RIGHT);
+
+
+  age_input = gtk_entry_new ();
+  gtk_widget_show (age_input);
+  gtk_table_attach (GTK_TABLE (table1), age_input, 1, 2, 7, 8,
+                    (GtkAttachOptions) (GTK_EXPAND | GTK_FILL),
+                    (GtkAttachOptions) (0), 0, 0);
+  gtk_entry_set_invisible_char (GTK_ENTRY (age_input), 8226);
+
+  age_label = gtk_label_new (_("Age:"));
+  gtk_widget_show (age_label);
+  gtk_table_attach (GTK_TABLE (table1), age_label, 0, 1, 7, 8,
+                    (GtkAttachOptions) (0),
+                    (GtkAttachOptions) (0), 0, 0);
+  gtk_label_set_justify (GTK_LABEL (age_label), GTK_JUSTIFY_RIGHT);
+
+
+  address_input = gtk_entry_new ();
+  gtk_widget_show (address_input);
+  gtk_table_attach (GTK_TABLE (table1), address_input, 1, 2, 8, 9,
+                    (GtkAttachOptions) (GTK_EXPAND | GTK_FILL),
+                    (GtkAttachOptions) (0), 0, 0);
+  gtk_entry_set_invisible_char (GTK_ENTRY (address_input), 8226);
+
+  address_label = gtk_label_new (_("Address:"));
+  gtk_widget_show (address_label);
+  gtk_table_attach (GTK_TABLE (table1), address_label, 0, 1, 8, 9,
+                    (GtkAttachOptions) (0),
+                    (GtkAttachOptions) (0), 0, 0);
+  gtk_label_set_justify (GTK_LABEL (address_label), GTK_JUSTIFY_RIGHT);
+
+
+  email_address_input = gtk_entry_new ();
+  gtk_widget_show (email_address_input);
+  gtk_table_attach (GTK_TABLE (table1), email_address_input, 1, 2, 9, 10,
+                    (GtkAttachOptions) (GTK_EXPAND | GTK_FILL),
+                    (GtkAttachOptions) (0), 0, 0);
+  gtk_entry_set_invisible_char (GTK_ENTRY (email_address_input), 8226);
+
+  email_address_label = gtk_label_new (_("Email Address:"));
+  gtk_widget_show (email_address_label);
+  gtk_table_attach (GTK_TABLE (table1), email_address_label, 0, 1, 9, 10,
+                    (GtkAttachOptions) (0),
+                    (GtkAttachOptions) (0), 0, 0);
+  gtk_label_set_justify (GTK_LABEL (email_address_label), GTK_JUSTIFY_RIGHT);
+
+  payment_information_input = gtk_entry_new ();
+  gtk_widget_show (payment_information_input);
+  gtk_table_attach (GTK_TABLE (table1), payment_information_input, 1, 2, 10, 11,
+                    (GtkAttachOptions) (GTK_EXPAND | GTK_FILL),
+                    (GtkAttachOptions) (0), 0, 0);
+  gtk_entry_set_invisible_char (GTK_ENTRY (payment_information_input), 8226);
+
+  payment_information_label = gtk_label_new (_("Payment Information:"));
+  gtk_widget_show (payment_information_label);
+  gtk_table_attach (GTK_TABLE (table1), payment_information_label, 0, 1, 10, 11,
+                    (GtkAttachOptions) (0),
+                    (GtkAttachOptions) (0), 0, 0);
+  gtk_label_set_justify (GTK_LABEL (payment_information_label), GTK_JUSTIFY_RIGHT);
+
+
+
   scrolledwindow2 = gtk_scrolled_window_new (NULL, NULL);
   gtk_widget_show (scrolledwindow2);
-  gtk_table_attach (GTK_TABLE (table1), scrolledwindow2, 1, 2, 6, 7,
+  gtk_table_attach (GTK_TABLE (table1), scrolledwindow2, 1, 2, 11, 12,
                     (GtkAttachOptions) (GTK_FILL),
                     (GtkAttachOptions) (GTK_EXPAND | GTK_FILL), 0, 0);
   GTK_WIDGET_UNSET_FLAGS (scrolledwindow2, GTK_CAN_FOCUS);
@@ -955,7 +1072,7 @@ create_dialog_edit_passitem (void)
 
   label8 = gtk_label_new (_("Notes:"));
   gtk_widget_show (label8);
-  gtk_table_attach (GTK_TABLE (table1), label8, 0, 1, 6, 7,
+  gtk_table_attach (GTK_TABLE (table1), label8, 0, 1, 11, 12,
                     (GtkAttachOptions) (0),
                     (GtkAttachOptions) (GTK_EXPAND | GTK_FILL), 0, 0);
   gtk_label_set_justify (GTK_LABEL (label8), GTK_JUSTIFY_RIGHT);
@@ -1054,6 +1171,21 @@ create_dialog_edit_passitem (void)
   GLADE_HOOKUP_OBJECT (dialog_edit_passitem, button_generate, "button_generate");
   GLADE_HOOKUP_OBJECT (dialog_edit_passitem, button_cancel, "button_cancel");
   GLADE_HOOKUP_OBJECT (dialog_edit_passitem, button_ok, "button_ok");
+
+  GLADE_HOOKUP_OBJECT(dialog_edit_passitem, firstname_input, "firstname_input");
+  GLADE_HOOKUP_OBJECT(dialog_edit_passitem, firstname_label, "firstname_label");
+  GLADE_HOOKUP_OBJECT(dialog_edit_passitem, lastname_input, "lastname_input");
+  GLADE_HOOKUP_OBJECT(dialog_edit_passitem, lastname_label, "lastname_label");
+  GLADE_HOOKUP_OBJECT(dialog_edit_passitem, age_input, "age_input");
+  GLADE_HOOKUP_OBJECT(dialog_edit_passitem, age_label, "age_label");
+  GLADE_HOOKUP_OBJECT(dialog_edit_passitem, sex_input, "sex_input");
+  GLADE_HOOKUP_OBJECT(dialog_edit_passitem, sex_label, "sex_label");
+  GLADE_HOOKUP_OBJECT(dialog_edit_passitem, address_input, "address_input");
+  GLADE_HOOKUP_OBJECT(dialog_edit_passitem, address_label, "address_label");
+  GLADE_HOOKUP_OBJECT(dialog_edit_passitem, email_address_input, "email_address_input");
+  GLADE_HOOKUP_OBJECT(dialog_edit_passitem, email_address_label, "email_address_label");
+  GLADE_HOOKUP_OBJECT(dialog_edit_passitem, payment_information_input, "payment_information_input");
+  GLADE_HOOKUP_OBJECT(dialog_edit_passitem, payment_information_label, "payment_information_label");
 
   gtk_widget_grab_focus (entry_title);
   return dialog_edit_passitem;
@@ -1174,7 +1306,7 @@ create_dialog_password (void)
   gtk_entry_set_visibility (GTK_ENTRY (entry_password), FALSE);
   gtk_entry_set_invisible_char (GTK_ENTRY (entry_password), 8226);
 
-  btn_show_key_file = gtk_button_new ();
+  /*btn_show_key_file = gtk_button_new ();
   gtk_widget_show (btn_show_key_file);
   gtk_table_attach (GTK_TABLE (table6), btn_show_key_file, 2, 3, 0, 1,
                     (GtkAttachOptions) (GTK_FILL),
@@ -1187,7 +1319,7 @@ create_dialog_password (void)
   arrow1 = gtk_arrow_new (GTK_ARROW_DOWN, GTK_SHADOW_OUT);
   gtk_widget_show (arrow1);
   gtk_container_add (GTK_CONTAINER (btn_show_key_file), arrow1);
-
+*/
   label_password_message = gtk_label_new ("");
   gtk_box_pack_start (GTK_BOX (dialog_vbox3), label_password_message, FALSE, FALSE, 0);
   gtk_label_set_justify (GTK_LABEL (label_password_message), GTK_JUSTIFY_CENTER);
@@ -1250,8 +1382,10 @@ create_dialog_password (void)
   GLADE_HOOKUP_OBJECT (dialog_password, image502, "image502");
   GLADE_HOOKUP_OBJECT (dialog_password, key_file_combo, "key_file_combo");
   GLADE_HOOKUP_OBJECT (dialog_password, entry_password, "entry_password");
+  /*
   GLADE_HOOKUP_OBJECT (dialog_password, btn_show_key_file, "btn_show_key_file");
   GLADE_HOOKUP_OBJECT (dialog_password, arrow1, "arrow1");
+  */
   GLADE_HOOKUP_OBJECT (dialog_password, label_password_message, "label_password_message");
   GLADE_HOOKUP_OBJECT_NO_REF (dialog_password, dialog_action_area3, "dialog_action_area3");
   GLADE_HOOKUP_OBJECT (dialog_password, hbuttonbox2, "hbuttonbox2");

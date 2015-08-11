@@ -199,6 +199,13 @@ fpm_edit_passitem(GtkWidget** win_edit_ptr, fpm_data* data)
   fpm_set_entry(*win_edit_ptr, "entry_title", data->title);
   fpm_set_entry(*win_edit_ptr, "entry_arg", data->arg);
   fpm_set_entry(*win_edit_ptr, "entry_user", data->user);
+  fpm_set_entry(*win_edit_ptr, "firstname_input", data->firstname);
+  fpm_set_entry(*win_edit_ptr, "lastname_input", data->lastname);
+  fpm_set_entry(*win_edit_ptr, "sex_input", data->sex);
+  fpm_set_entry(*win_edit_ptr, "age_input", data->age);
+  fpm_set_entry(*win_edit_ptr, "address_input", data->address);
+  fpm_set_entry(*win_edit_ptr, "payment_information_input", data->payment_information);
+  fpm_set_entry(*win_edit_ptr, "email_address_input", data->email_address);
 
 /*
   gtk_toggle_button_set_active(
@@ -248,6 +255,14 @@ fpm_save_passitem(GtkWidget* win_edit, fpm_data* data)
   data->title = fpm_get_entry(win_edit, "entry_title");
   data->arg = fpm_get_entry(win_edit, "entry_arg");
   data->user = fpm_get_entry(win_edit, "entry_user");
+  data->firstname = fpm_get_entry(win_edit, "firstname_input");
+  data->lastname = fpm_get_entry(win_edit, "lastname_input");
+  data->sex = fpm_get_entry(win_edit, "sex_input");
+  data->age = fpm_get_entry(win_edit, "age_input");
+  data->address = fpm_get_entry(win_edit, "address_input");
+  data->payment_information = fpm_get_entry(win_edit, "payment_information_input");
+  data->email_address = fpm_get_entry(win_edit, "email_address_input");
+
   /* PEPMCHANGE
   data->category = fpm_get_combo_entry(win_edit, "combo_box_category");
   data->launcher = fpm_get_combo_entry(win_edit, "combo_box_launcher");

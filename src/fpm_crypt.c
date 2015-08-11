@@ -384,6 +384,13 @@ void fpm_decrypt_all()
     fpm_decrypt_field_inplace(&data->title);
     fpm_decrypt_field_inplace(&data->arg);
     fpm_decrypt_field_inplace(&data->user);
+    fpm_decrypt_field_inplace(&data->firstname);
+    fpm_decrypt_field_inplace(&data->lastname);
+    fpm_decrypt_field_inplace(&data->sex);
+    fpm_decrypt_field_inplace(&data->age);
+    fpm_decrypt_field_inplace(&data->address);
+    fpm_decrypt_field_inplace(&data->payment_information);
+    fpm_decrypt_field_inplace(&data->email_address);
     fpm_decrypt_field_inplace(&data->notes);
     fpm_decrypt_field_inplace(&data->category);
     fpm_decrypt_field_inplace(&data->launcher);

@@ -99,6 +99,21 @@ msgstr "_Kategorie"
 msgid "_Notes"
 msgstr "_Notizen"
 
+msgid "_Age"
+msgstr "_Alter"
+msgid "_Firstname"
+msgstr "_Vorname"
+msgid "_Lastname"
+msgstr "_Nachname"
+msgid "_Sex"
+msgstr "_Geschlecht"
+msgid "_Address"
+msgstr "_Adresse"
+msgid "_Email Address"
+msgstr "_Email-Adresse"
+msgid "_Payment Information"
+msgstr "_Zahlungsinformation"
+
 #: src/interface.c:340
 msgid "_Launcher"
 msgstr "_Starter"
@@ -137,7 +152,7 @@ msgstr "Neu"
 
 #: src/interface.c:441 src/interface.c:890
 msgid "Jump"
-msgstr "Springe"
+msgstr "Öffne"
 
 #: src/interface.c:447 src/fpm.c:92
 msgid "User"
@@ -166,6 +181,21 @@ msgstr "Passworteintrag ansehen / bearbeiten"
 #: src/interface.c:842
 msgid "Title:"
 msgstr "Titel:"
+
+msgid "Age:"
+msgstr "Alter:"
+msgid "Sex:"
+msgstr "Geschlecht:"
+msgid "Firstname:"
+msgstr "Vorname:"
+msgid "Lastname:"
+msgstr "Nachname:"
+msgid "Address:"
+msgstr "Adresse:"
+msgid "Email Address:"
+msgstr "Email-Adresse:"
+msgid "Payment Information:"
+msgstr "Zahlungsinformation:"
 
 #: src/interface.c:849
 msgid "URL:"
@@ -729,6 +759,21 @@ msgstr "Titel"
 #: src/fpm.c:91
 msgid "URL"
 msgstr "URL"
+
+msgid "Lastname"
+msgstr "Nachname"
+msgid "Firstname"
+msgstr "Vorname"
+msgid "Age"
+msgstr "Alter"
+msgid "Sex"
+msgstr "Geschlecht"
+msgid "Address"
+msgstr "Adresse"
+msgid "Email Address"
+msgstr "Email-Adresse"
+msgid "Payment Information"
+msgstr "Zahlungsinformation"
 
 #: src/fpm.c:93
 msgid "Password"
